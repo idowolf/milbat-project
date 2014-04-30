@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9ED54D2B-DC7E-4756-826B-1EB3B6346F03}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MilbatProject</RootNamespace>
+    <AssemblyName>MilbatProject</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>MilbatProject_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>MilbatProject.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="WizardPage.xaml.cs">
+      <DependentUpon>WizardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\QuestionViewModel.cs" />
+    <Compile Include="ViewModels\MainPageListViewModel.cs" />
+    <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="ViewModels\WizardViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="WizardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <DesignData Include="SampleData\MainViewModelSampleData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DesignData>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\BadgeLogo.png" />
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\SquareTile150x150.png" />
+    <Content Include="Assets\SquareTile71x71.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\WideLogo.png" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\WizardAssets\image001.jpg" />
+    <Content Include="Assets\WizardAssets\image002.jpg" />
+    <Content Include="Assets\WizardAssets\image003.jpg" />
+    <Content Include="Assets\WizardAssets\image004.jpg" />
+    <Content Include="Assets\WizardAssets\image005.jpg" />
+    <Content Include="Assets\WizardAssets\image006.jpg" />
+    <Content Include="Assets\WizardAssets\image007.jpg" />
+    <Content Include="Assets\WizardAssets\image008.jpg" />
+    <Content Include="Assets\WizardAssets\image009.jpg" />
+    <Content Include="Assets\WizardAssets\image010.jpg" />
+    <Content Include="Assets\WizardAssets\image011.jpg" />
+    <Content Include="Assets\WizardAssets\image012.jpg" />
+    <Content Include="Assets\WizardAssets\image013.png" />
+    <Content Include="Assets\WizardAssets\image014.jpg" />
+    <Content Include="Assets\WizardAssets\image015.jpg" />
+    <Content Include="Assets\WizardAssets\image016.jpg" />
+    <Content Include="Assets\WizardAssets\image017.jpg" />
+    <Content Include="Assets\WizardAssets\image018.jpg" />
+    <Content Include="Assets\WizardAssets\image019.jpg" />
+    <Content Include="Assets\WizardAssets\image020.jpg" />
+    <Content Include="Assets\WizardAssets\image021.jpg" />
+    <Content Include="Assets\WizardAssets\image022.jpg" />
+    <Content Include="Assets\WizardAssets\image023.jpg" />
+    <Content Include="Assets\WizardAssets\image024.jpg" />
+    <Content Include="Assets\WizardAssets\image025.jpg" />
+    <Content Include="Assets\WizardAssets\image026.jpg" />
+    <Content Include="Assets\WizardAssets\image027.jpg" />
+    <Content Include="Assets\WizardAssets\image028.jpg" />
+    <Content Include="Assets\WizardAssets\image029.jpg" />
+    <Content Include="Assets\WizardAssets\image030.jpg" />
+    <Content Include="Assets\WizardAssets\image031.jpg" />
+    <Content Include="Assets\WizardAssets\image032.jpg" />
+    <Content Include="Assets\WizardAssets\image033.jpg" />
+    <Content Include="Assets\WizardAssets\image034.jpg" />
+    <Content Include="Assets\WizardAssets\image035.jpg" />
+    <Content Include="Assets\WizardAssets\image036.jpg" />
+    <Content Include="Assets\WizardAssets\image037.jpg" />
+    <Content Include="Assets\WizardAssets\image038.jpg" />
+    <Content Include="Assets\WizardAssets\image039.jpg" />
+    <Content Include="Assets\WizardAssets\image040.jpg" />
+    <Content Include="Assets\WizardAssets\image041.jpg" />
+    <Content Include="Assets\WizardAssets\image042.jpg" />
+    <Content Include="Assets\WizardAssets\image043.jpg" />
+    <Content Include="Assets\WizardAssets\image044.jpg" />
+    <Content Include="Assets\WizardAssets\image045.jpg" />
+    <Content Include="Assets\WizardAssets\image046.jpg" />
+    <Content Include="Assets\WizardAssets\image047.jpg" />
+    <Content Include="Assets\WizardAssets\image048.jpg" />
+    <Content Include="Assets\WizardAssets\image049.jpg" />
+    <Content Include="Assets\WizardAssets\image050.jpg" />
+    <Content Include="Assets\WizardAssets\image051.jpg" />
+    <Content Include="Assets\WizardAssets\image052.jpg" />
+    <Content Include="Assets\WizardAssets\image053.jpg" />
+    <Content Include="Assets\WizardAssets\image054.jpg" />
+    <Content Include="Assets\WizardAssets\image055.jpg" />
+    <Content Include="Assets\WizardAssets\image056.png" />
+    <Content Include="Assets\WizardAssets\image057.jpg" />
+    <Content Include="Assets\WizardAssets\image058.jpg" />
+    <Content Include="Assets\WizardAssets\image059.jpg" />
+    <Content Include="Assets\WizardAssets\image060.jpg" />
+    <Content Include="Assets\WizardAssets\image061.jpg" />
+    <Content Include="Assets\WizardAssets\image062.jpg" />
+    <Content Include="Assets\WizardAssets\image063.jpg" />
+    <Content Include="Assets\WizardAssets\image064.png" />
+    <Content Include="Assets\WizardAssets\image065.jpg" />
+    <Content Include="Assets\WizardAssets\image066.jpg" />
+    <Content Include="Assets\WizardAssets\image067.jpg" />
+    <Content Include="Assets\WizardAssets\image068.jpg" />
+    <Content Include="Assets\WizardAssets\image069.jpg" />
+    <Content Include="Assets\WizardAssets\image070.jpg" />
+    <Content Include="Assets\WizardAssets\image071.jpg" />
+    <Content Include="Assets\WizardAssets\image072.jpg" />
+    <Content Include="Assets\WizardAssets\image073.jpg" />
+    <Content Include="Assets\WizardAssets\image074.jpg" />
+    <Content Include="Assets\WizardAssets\image075.jpg" />
+    <Content Include="Assets\WizardAssets\image076.jpg" />
+    <Content Include="Assets\WizardAssets\image077.jpg" />
+    <Content Include="Assets\WizardAssets\image078.jpg" />
+    <Content Include="Assets\WizardAssets\image079.jpg" />
+    <Content Include="Assets\WizardAssets\image080.jpg" />
+    <Content Include="Assets\WizardAssets\image081.jpg" />
+    <Content Include="Assets\WizardAssets\image082.jpg" />
+    <Content Include="MilbatDatabase.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="test.xml" />
+    <Content Include="WizardResults.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
