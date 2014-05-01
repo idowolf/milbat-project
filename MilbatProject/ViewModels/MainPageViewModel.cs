@@ -16,9 +16,9 @@ namespace MilbatProject.ViewModels
         {
             this.Items = new ObservableCollection<MainPageListViewModel>();
             LoadMenuList();
-            if (!DetailsPage.DB.IsDataLoaded)
+            if (!QuestionsPage.DB.IsDataLoaded)
             {
-                DetailsPage.DB.LoadData();
+                QuestionsPage.DB.LoadData();
             }
         }
         /// <summary>
@@ -44,7 +44,7 @@ namespace MilbatProject.ViewModels
                 handler(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-        private string[] PageSelection = { "WizardPage", "MainPage" };
+        private string[] PageSelection = { "WizardMainPage", "MainPage" };
         public Uri GetNavigationContext(MainPageListViewModel nextItem)
         {
             return new Uri("/" + PageSelection[Items.IndexOf(nextItem)] + ".xaml", UriKind.Relative);

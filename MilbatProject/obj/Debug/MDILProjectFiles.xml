@@ -3,13 +3,38 @@
   <XAPFiles>
     <File>resources.pri</File>
     <File>MilbatProject.dll</File>
+    <File>1.jpg</File>
+    <File>1398731078_camera_test.png</File>
+    <File>Assets\1398731016_DeleteRed.png</File>
+    <File>Assets\1398731078_camera_test.png</File>
     <File>Assets\AlignmentGrid.png</File>
+    <File>Assets\AppBar\auction_hammer_gavel.png</File>
+    <File>Assets\AppBar\back.png</File>
+    <File>Assets\AppBar\feature.camera.png</File>
+    <File>Assets\AppBar\feature.email.png</File>
+    <File>Assets\AppBar\feature.phone.png</File>
+    <File>Assets\AppBar\next.png</File>
+    <File>Assets\AppBar\questionmark.png</File>
+    <File>Assets\AppBar\save.png</File>
     <File>Assets\BadgeLogo.png</File>
+    <File>Assets\camera.png</File>
+    <File>Assets\checklist 2.png</File>
+    <File>Assets\email.png</File>
+    <File>Assets\home.png</File>
+    <File>Assets\home1.png</File>
+    <File>Assets\I.png</File>
+    <File>Assets\Image1.png</File>
+    <File>Assets\in home.png</File>
     <File>Assets\Logo.png</File>
+    <File>Assets\patish.png</File>
+    <File>Assets\question.png</File>
+    <File>Assets\reports.png</File>
     <File>Assets\SplashScreen.png</File>
     <File>Assets\SquareTile150x150.png</File>
     <File>Assets\SquareTile71x71.png</File>
     <File>Assets\StoreLogo.png</File>
+    <File>Assets\takin helkit.png</File>
+    <File>Assets\Untitled-2-Recovered copy.png</File>
     <File>Assets\WideLogo.png</File>
     <File>Assets\Tiles\FlipCycleTileLarge.png</File>
     <File>Assets\Tiles\FlipCycleTileSmall.png</File>
@@ -97,8 +122,24 @@
     <File>Assets\WizardAssets\image080.jpg</File>
     <File>Assets\WizardAssets\image081.jpg</File>
     <File>Assets\WizardAssets\image082.jpg</File>
+    <File>Assets\דלת כניסה.jpg</File>
+    <File>Assets\חדר אמבטיה.jpg</File>
+    <File>Assets\חדר מדרגות חיצוני.jpg</File>
+    <File>Assets\חדר מקלחת.jpg</File>
+    <File>Assets\חדר שינה.jpg</File>
+    <File>Assets\חצר.jpg</File>
+    <File>Assets\כללי בבית.jpg</File>
+    <File>Assets\כללי.jpg</File>
+    <File>Assets\מדרגות בתוך הבית.jpg</File>
+    <File>Assets\מטבח.jpg</File>
+    <File>Assets\מעלית.jpg</File>
+    <File>Assets\סלון.jpg</File>
+    <File>Assets\פרוזדורים.jpg</File>
+    <File>Assets\שירותים.jpg</File>
+    <File>logo.png</File>
     <File>MilbatDatabase.xml</File>
     <File>test.xml</File>
+    <File>WizardResults.xml</File>
     <File>AppManifest.xaml</File>
     <File>Assets\ApplicationIcon.png</File>
     <File>Assets\Tiles\FlipCycleTileMedium.png</File>

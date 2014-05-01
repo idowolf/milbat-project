@@ -1,0 +1,61 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MilbatProject.RoomPropertiesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/save.png" Text="שמור,המשך"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White" FlowDirection="RightToLeft">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28" FlowDirection="RightToLeft">
+            <TextBlock Text="שם הדייר וחדר" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FlowDirection="RightToLeft" Foreground="#FFFC5207"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" FlowDirection="RightToLeft">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="140*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="70*"/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="name" TextWrapping="Wrap" Text="משה" FlowDirection="RightToLeft" Grid.Row="1" FontSize="26.667" BorderBrush="#BF000000"/>
+            <TextBox x:Name="room" TextWrapping="Wrap" Text="שירותים" FlowDirection="RightToLeft" Grid.Row="4" Foreground="Black" BorderBrush="#BF000000"/>
+            <TextBlock x:Name="rooom_block" TextWrapping="Wrap" FlowDirection="RightToLeft" FontSize="33.333" Grid.Row="3" Foreground="Black">
+        		<Run FontSize="46.667" Text="חדר"/>
+        		<LineBreak/>
+        		<Run/>
+        		<LineBreak/>
+        		<Run/>
+            </TextBlock>
+            <TextBlock x:Name="name_block" TextWrapping="Wrap" FlowDirection="RightToLeft" FontSize="33.333" Foreground="Black">
+        		<Run FontSize="46.667" Text="שם הדייר"/>
+        		<LineBreak/>
+        		<Run/>
+            </TextBlock>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

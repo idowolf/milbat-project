@@ -33,4 +33,13 @@ c:\users\ido\documents\visual studio 2013\Projects\MilbatProject\MilbatProject\o
 c:\users\ido\documents\visual studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\ProjectArchitectures.txt
 c:\users\ido\documents\visual studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MDILProjectFiles.xml
 c:\users\ido\documents\visual studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\XapCacheFile.xml
-C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\WizardPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\QuestionsPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\WizardMainPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\RoomPropertiesPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\AboutPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\WizardOutsideHousePage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\ContactPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\DidYouKnowPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\DisclaimerPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MyReports.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\WizardInsideHousePage.g.cs

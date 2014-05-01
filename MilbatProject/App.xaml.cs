@@ -92,9 +92,9 @@ namespace MilbatProject
         private void Application_Activated(object sender, ActivatedEventArgs e)
         {
             // Ensure that application state is restored appropriately
-            if (!DetailsPage.DB.IsDataLoaded)
+            if (!QuestionsPage.DB.IsDataLoaded)
             {
-                DetailsPage.DB.LoadData();
+                QuestionsPage.DB.LoadData();
             }
         }
 

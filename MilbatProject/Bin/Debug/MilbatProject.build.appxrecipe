@@ -19,61 +19,8 @@
     <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\MilbatProject.dll">
       <PackagePath>MilbatProject.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AlignmentGrid.png">
-      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\ApplicationIcon.png">
-      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\BadgeLogo.png">
-      <PackagePath>Assets\BadgeLogo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Logo.png">
-      <PackagePath>Assets\Logo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\SplashScreen.png">
-      <PackagePath>Assets\SplashScreen.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\SquareTile150x150.png">
-      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\SquareTile71x71.png">
-      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WideLogo.png">
-      <PackagePath>Assets\WideLogo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileLarge.png">
-      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileMedium.png">
-      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileSmall.png">
-      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\IconicTileMediumLarge.png">
-      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\IconicTileSmall.png">
-      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\image013.png">
-      <PackagePath>Assets\WizardAssets\image013.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\image056.png">
-      <PackagePath>Assets\WizardAssets\image056.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\image064.png">
-      <PackagePath>Assets\WizardAssets\image064.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\1.jpg">
+      <PackagePath>1.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\image001.jpg">
       <PackagePath>Assets\WizardAssets\image001.jpg</PackagePath>
@@ -312,11 +259,187 @@
     <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\image082.jpg">
       <PackagePath>Assets\WizardAssets\image082.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\דלת כניסה.jpg">
+      <PackagePath>Assets\דלת כניסה.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\חדר אמבטיה.jpg">
+      <PackagePath>Assets\חדר אמבטיה.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\חדר מדרגות חיצוני.jpg">
+      <PackagePath>Assets\חדר מדרגות חיצוני.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\חדר מקלחת.jpg">
+      <PackagePath>Assets\חדר מקלחת.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\חדר שינה.jpg">
+      <PackagePath>Assets\חדר שינה.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\חצר.jpg">
+      <PackagePath>Assets\חצר.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\כללי בבית.jpg">
+      <PackagePath>Assets\כללי בבית.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\כללי.jpg">
+      <PackagePath>Assets\כללי.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\מדרגות בתוך הבית.jpg">
+      <PackagePath>Assets\מדרגות בתוך הבית.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\מטבח.jpg">
+      <PackagePath>Assets\מטבח.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\מעלית.jpg">
+      <PackagePath>Assets\מעלית.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\סלון.jpg">
+      <PackagePath>Assets\סלון.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\פרוזדורים.jpg">
+      <PackagePath>Assets\פרוזדורים.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\שירותים.jpg">
+      <PackagePath>Assets\שירותים.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\1398731078_camera_test.png">
+      <PackagePath>1398731078_camera_test.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\1398731016_DeleteRed.png">
+      <PackagePath>Assets\1398731016_DeleteRed.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\1398731078_camera_test.png">
+      <PackagePath>Assets\1398731078_camera_test.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\auction_hammer_gavel.png">
+      <PackagePath>Assets\AppBar\auction_hammer_gavel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\back.png">
+      <PackagePath>Assets\AppBar\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.camera.png">
+      <PackagePath>Assets\AppBar\feature.camera.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.email.png">
+      <PackagePath>Assets\AppBar\feature.email.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.phone.png">
+      <PackagePath>Assets\AppBar\feature.phone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\next.png">
+      <PackagePath>Assets\AppBar\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\questionmark.png">
+      <PackagePath>Assets\AppBar\questionmark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\save.png">
+      <PackagePath>Assets\AppBar\save.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\camera.png">
+      <PackagePath>Assets\camera.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\checklist 2.png">
+      <PackagePath>Assets\checklist 2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\email.png">
+      <PackagePath>Assets\email.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\home.png">
+      <PackagePath>Assets\home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\home1.png">
+      <PackagePath>Assets\home1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\I.png">
+      <PackagePath>Assets\I.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Image1.png">
+      <PackagePath>Assets\Image1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\in home.png">
+      <PackagePath>Assets\in home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\patish.png">
+      <PackagePath>Assets\patish.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\question.png">
+      <PackagePath>Assets\question.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\reports.png">
+      <PackagePath>Assets\reports.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\takin helkit.png">
+      <PackagePath>Assets\takin helkit.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Untitled-2-Recovered copy.png">
+      <PackagePath>Assets\Untitled-2-Recovered copy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\IconicTileSmall.png">
+      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\image013.png">
+      <PackagePath>Assets\WizardAssets\image013.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\image056.png">
+      <PackagePath>Assets\WizardAssets\image056.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\image064.png">
+      <PackagePath>Assets\WizardAssets\image064.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\logo.png">
+      <PackagePath>logo.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\MilbatDatabase.xml">
       <PackagePath>MilbatDatabase.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\test.xml">
       <PackagePath>test.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\WizardResults.xml">
+      <PackagePath>WizardResults.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

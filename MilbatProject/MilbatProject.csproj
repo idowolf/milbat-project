@@ -91,12 +91,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactPage.xaml.cs">
+      <DependentUpon>ContactPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DidYouKnowPage.xaml.cs">
+      <DependentUpon>DidYouKnowPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DisclaimerPage.xaml.cs">
+      <DependentUpon>DisclaimerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LocalizedStrings.cs" />
-    <Compile Include="WizardPage.xaml.cs">
-      <DependentUpon>WizardPage.xaml</DependentUpon>
+    <Compile Include="MyReports.xaml.cs">
+      <DependentUpon>MyReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionsPage.xaml.cs">
+      <DependentUpon>QuestionsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -107,17 +122,49 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RoomPropertiesPage.xaml.cs">
+      <DependentUpon>RoomPropertiesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\QuestionViewModel.cs" />
     <Compile Include="ViewModels\MainPageListViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\WizardViewModel.cs" />
+    <Compile Include="WizardInsideHousePage.xaml.cs">
+      <DependentUpon>WizardInsideHousePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WizardMainPage.xaml.cs">
+      <DependentUpon>WizardMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WizardOutsideHousePage.xaml.cs">
+      <DependentUpon>WizardOutsideHousePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="WizardPage.xaml">
+    <Page Include="AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContactPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DidYouKnowPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DisclaimerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyReports.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuestionsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -129,6 +176,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </DesignData>
+    <Page Include="RoomPropertiesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WizardInsideHousePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WizardMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WizardOutsideHousePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -136,6 +199,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AppBar\Thumbs.db" />
     <None Include="Properties\AppManifest.xml">
       <SubType>Designer</SubType>
     </None>
@@ -144,16 +208,41 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1.jpg" />
+    <Content Include="1398731078_camera_test.png" />
+    <Content Include="Assets\1398731016_DeleteRed.png" />
+    <Content Include="Assets\1398731078_camera_test.png" />
     <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\AppBar\auction_hammer_gavel.png" />
+    <Content Include="Assets\AppBar\back.png" />
+    <Content Include="Assets\AppBar\feature.camera.png" />
+    <Content Include="Assets\AppBar\feature.email.png" />
+    <Content Include="Assets\AppBar\feature.phone.png" />
+    <Content Include="Assets\AppBar\next.png" />
+    <Content Include="Assets\AppBar\questionmark.png" />
+    <Content Include="Assets\AppBar\save.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\BadgeLogo.png" />
+    <Content Include="Assets\camera.png" />
+    <Content Include="Assets\checklist 2.png" />
+    <Content Include="Assets\email.png" />
+    <Content Include="Assets\home.png" />
+    <Content Include="Assets\home1.png" />
+    <Content Include="Assets\I.png" />
+    <Content Include="Assets\Image1.png" />
+    <Content Include="Assets\in home.png" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\patish.png" />
+    <Content Include="Assets\question.png" />
+    <Content Include="Assets\reports.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\SquareTile150x150.png" />
     <Content Include="Assets\SquareTile71x71.png" />
     <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\takin helkit.png" />
+    <Content Include="Assets\Untitled-2-Recovered copy.png" />
     <Content Include="Assets\WideLogo.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -252,6 +341,21 @@
     <Content Include="Assets\WizardAssets\image080.jpg" />
     <Content Include="Assets\WizardAssets\image081.jpg" />
     <Content Include="Assets\WizardAssets\image082.jpg" />
+    <Content Include="Assets\דלת כניסה.jpg" />
+    <Content Include="Assets\חדר אמבטיה.jpg" />
+    <Content Include="Assets\חדר מדרגות חיצוני.jpg" />
+    <Content Include="Assets\חדר מקלחת.jpg" />
+    <Content Include="Assets\חדר שינה.jpg" />
+    <Content Include="Assets\חצר.jpg" />
+    <Content Include="Assets\כללי בבית.jpg" />
+    <Content Include="Assets\כללי.jpg" />
+    <Content Include="Assets\מדרגות בתוך הבית.jpg" />
+    <Content Include="Assets\מטבח.jpg" />
+    <Content Include="Assets\מעלית.jpg" />
+    <Content Include="Assets\סלון.jpg" />
+    <Content Include="Assets\פרוזדורים.jpg" />
+    <Content Include="Assets\שירותים.jpg" />
+    <Content Include="logo.png" />
     <Content Include="MilbatDatabase.xml">
       <SubType>Designer</SubType>
     </Content>
