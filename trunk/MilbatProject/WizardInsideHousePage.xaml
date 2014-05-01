@@ -1,0 +1,97 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MilbatProject.WizardInsideHousePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot" FlowDirection="RightToLeft" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <phone:Panorama Title="בתוך הבית" Margin="8,0,-8,0" Foreground="#FFFC5207">
+
+            <!--Panorama item one-->
+
+            <!--Panorama item one-->
+            <!--Panorama item one-->
+            <!--Panorama item one-->
+            <phone:PanoramaItem x:Name="door" Header="דלת כניסה" HorizontalContentAlignment="Stretch" FlowDirection="RightToLeft" Foreground="Black">
+                <Grid Height="477" Width="420">
+                    <Image Source="Assets/דלת כניסה.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem x:Name="ambatia_room" Header="חדר אמבטיה" FlowDirection="RightToLeft" FontSize="64" Foreground="Black">
+                <Grid FlowDirection="RightToLeft">
+                    <Image Source="Assets/חדר אמבטיה.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem x:Name="miklahat_room" Header="חדר מקלחת" FlowDirection="RightToLeft" Foreground="Black">
+                <Grid>
+                    <Image Source="/Assets/חדר מקלחת.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem x:Name="sleeping_room" Header="חדר שינה" FlowDirection="RightToLeft" Foreground="Black">
+                <Grid>
+                    <Image Source="Assets/חדר שינה.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem x:Name="shirotim" Header="חדר שירותים" FlowDirection="RightToLeft" Foreground="Black">
+                <Grid>
+                    <Image Source="Assets/שירותים.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem x:Name="madregot" Header="מדרגות בבית" FlowDirection="RightToLeft" Foreground="Black">
+                <Grid>
+                    <Image Source="Assets/מדרגות בתוך הבית.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem x:Name="kitchen" Header="מטבח" FlowDirection="RightToLeft" Foreground="Black">
+                <Grid>
+                    <Image Source="Assets/מטבח.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem x:Name="living_room" Header="סלון" FlowDirection="RightToLeft" Foreground="Black">
+                <Grid>
+                    <Image Source="Assets/סלון.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+            <phone:PanoramaItem x:Name="prozdorim" Header="פרוזדורים" FlowDirection="RightToLeft" Foreground="Black">
+                <Grid>
+                    <Image Source="Assets/פרוזדורים.jpg" Stretch="Fill"/>
+                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    </Button>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!--Panorama item two-->
+        </phone:Panorama>
+    </Grid>
+
+</phone:PhoneApplicationPage>

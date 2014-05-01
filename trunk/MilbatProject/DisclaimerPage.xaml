@@ -1,0 +1,60 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MilbatProject.DisclaimerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/save.png" Text="שמור"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White" FlowDirection="RightToLeft">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+
+            <TextBlock Text="תקנון" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFFC5207"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" FlowDirection="RightToLeft">
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" Height="630" Width="456" FontSize="24">
+        		<Run Text="פירוט קצר של תקנון השימוש באפליקציה: המידע הניתן באמצעות יישום זה אינו מחייב לצורך זכאות כלשהי ואינו מטיל אחריות על עמותת מילבת"/>
+        		<Run Text="."/>
+        		<LineBreak/>
+        		<Span>
+        			<Run Text="על מקבל המידע לבדוק ישירות עם הצרכנים או עם נציגיהם את כל הסיכונים העלולים לנבוע משימוש במידע ובהצעות שניתנו. יש לוודא אצל המטפלים הרפואיים והפרה-רפואיים הרלוונטים את התאמת האביזר וההצעות למקבל המידע."/>
+        		</Span>
+        		<LineBreak/>
+        		<Span>
+        			<Span>
+        				<Run Text="המשתמש מאשר שחלק מהנתונים על גורמי הסיכון שאותרו בבית יועברו לעמותת מילבת, באופן אנונימי לחלוטין, ושישמו לצרכי מחקר בלבד."/>
+        			</Span>
+        			<Span FontFamily="Times New Roman">
+        				<LineBreak/>
+        			</Span>
+        		</Span>
+            </TextBlock>
+
+        </Grid>
+        <CheckBox Content="בעת סימון זה אני מאשר את התקנון" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Margin="0,462,0,0" Foreground="Black" BorderBrush="Black" Width="476"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,51 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MilbatProject.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White" FlowDirection="RightToLeft">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Text="אודות מילבת" Foreground="#FFFC5207"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock TextWrapping="Wrap" FontSize="22" Margin="2,6,-2,-6" Foreground="Black">
+        		<Run Text="מילבת היא עמותה ציבורית ללא כוונת רווח (ע.ר.) המסייעת לשפר את איכות החיים של ילדים, מבוגרים וקשישים עם מגבלה באמצעות סביבה טכנולוגית מותאמת. במילבת צוות שיקומי המעניק ייעוץ אובייקטיבי לבחירת אביזרי העזר לשיפור התפקוד ומידע היכן ניתן להשיגם. כאשר לא מצוי פתרון מסחרי מתאים, צוות מומחים מתחומי הטכנולוגיה המתנדבים במילבת מפתחים בהתנדבות את האביזר הנחוץ"/>
+        		<LineBreak/>
+        		<Run Text="מילבת הקימה את מאגר המידע האינטרנטי הלאומי &quot;עזרים&quot; ובו מידע על יותר מ- 17,000 אבזרי עזר."/>
+        		<LineBreak/>
+        		<Run Text="עמותת מילבת מסייעת לילדים ומבוגרים בעלי מוגבלויות; נכי צה&quot;ל; קשישים עם ירידה תפקודית; בני משפחות ; אנשי מקצוע וסטודנטים; "/>
+        		<LineBreak/>
+        		<Span>
+        			<Run Text="אנו מזמינים אותך להצטרף לפעילותינו – בתרומה ובעשייה. התרומות למילבת מוכרות לצרכי מס בישראל, בארצות הברית ובאנגליה"/>
+        			<Run Text=".."/>
+        		</Span>
+            </TextBlock>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -19,43 +19,51 @@ namespace MilbatProject
         public MainPage()
         {
             InitializeComponent();
-            // Set the data context of the LongListSelector control to the sample data
-
             DataContext = App.ViewModel;
+
         }
 
-        // Load data for the ViewModel QuestionsCollection
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        private void ashaf_Click(object sender, RoutedEventArgs e)
         {
+            NavigationService.Navigate(new Uri("/WizardOutsideHousePage.xaml", UriKind.Relative));
         }
+        //    // Set the data context of the LongListSelector control to the sample data
 
-        // Handle selection changed on LongListSelector
-        private void MainLongListSelector_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            // If selected item is null (no selection) do nothing
-            if (MainLongListSelector.SelectedItem == null)
-                return;
-
-            // Navigate to the new page
-            NavigationService.Navigate(App.ViewModel.GetNavigationContext(MainLongListSelector.SelectedItem as MainPageListViewModel));
-            MainLongListSelector.SelectedItem = null;
-        }
-
-        //void GotoWizardPage_Click(object sender, EventArgs e)
-        //{
-        //    NavigationService.Navigate(new Uri("/WizardPage.xaml", UriKind.Relative));
+        //    DataContext = App.ViewModel;
         //}
 
-        //void appBarButton_Click(object sender, EventArgs e)
+        //// Load data for the ViewModel QuestionsCollection
+        //protected override void OnNavigatedTo(NavigationEventArgs e)
         //{
-        //    Application.Current.Terminate();
         //}
 
-
-        //void ReturntoMainPage_Click(object sender, EventArgs e)
+        //// Handle selection changed on LongListSelector
+        //private void MainLongListSelector_SelectionChanged(object sender, SelectionChangedEventArgs e)
         //{
-        //    NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        //    // If selected item is null (no selection) do nothing
+        //    if (MainLongListSelector.SelectedItem == null)
+        //        return;
+
+        //    // Navigate to the new page
+        //    NavigationService.Navigate(App.ViewModel.GetNavigationContext(MainLongListSelector.SelectedItem as MainPageListViewModel));
+        //    MainLongListSelector.SelectedItem = null;
         //}
+
+        ////void GotoWizardPage_Click(object sender, EventArgs e)
+        ////{
+        ////    NavigationService.Navigate(new Uri("/WizardPage.xaml", UriKind.Relative));
+        ////}
+
+        ////void appBarButton_Click(object sender, EventArgs e)
+        ////{
+        ////    Application.Current.Terminate();
+        ////}
+
+
+        ////void ReturntoMainPage_Click(object sender, EventArgs e)
+        ////{
+        ////    NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        ////}
 
     }
 }

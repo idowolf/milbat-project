@@ -12,7 +12,7 @@ using MilbatProject.ViewModels;
 
 namespace MilbatProject
 {
-    public partial class DetailsPage : PhoneApplicationPage
+    public partial class QuestionsPage : PhoneApplicationPage
     {
         private static WizardViewModel dB = null;
 
@@ -33,7 +33,7 @@ namespace MilbatProject
         }
         string selectedIndex = "";
         // Constructor
-        public DetailsPage()
+        public QuestionsPage()
         {
             InitializeComponent();
 
@@ -44,7 +44,6 @@ namespace MilbatProject
         // When page is navigated to set data context to selected item in list
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            suggestion.Visibility = Visibility.Collapsed;
             int y = 0;
             if (DataContext == null)
             {
@@ -66,26 +65,11 @@ namespace MilbatProject
             }
         }
 
-        private void Nobutton_Click(object sender, RoutedEventArgs e)
-        {
-            suggestion.Visibility = Visibility.Visible;
-        }
-
-        private void Unsurebutton_Click(object sender, RoutedEventArgs e)
-        {
-            suggestion.Visibility = Visibility.Visible;
-        }
-
-        private void Yesbutton_Click(object sender, RoutedEventArgs e)
-        {
-            suggestion.Visibility = Visibility.Collapsed;
-        }
-
         private void Previousbutton_Click(object sender, RoutedEventArgs e)
         {
             if (Array.IndexOf(dB.ItemIDs, selectedIndex) > 0)
             {
-                NavigationService.Navigate(new Uri("/DetailsPage.xaml?selectedItem=" + dB.QuestionsCollection[Array.IndexOf(dB.ItemIDs, selectedIndex) - 1].ID, UriKind.Relative));
+                NavigationService.Navigate(new Uri("/QuestionsPage.xaml?selectedItem=" + dB.QuestionsCollection[Array.IndexOf(dB.ItemIDs, selectedIndex) - 1].ID, UriKind.Relative));
                 int x = Array.IndexOf(dB.ItemIDs, selectedIndex) + 1;
             }
         }

@@ -13,9 +13,14 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
-
-    <!--Data context is set to sample data above and LayoutRoot contains the root grid where all other page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar/>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    <phone:PhoneApplicationPage.Background>
+        <ImageBrush Stretch="Fill"/>
+    </phone:PhoneApplicationPage.Background>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White" FlowDirection="RightToLeft">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -41,24 +46,59 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="האשף שלי" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Image Source="Untitled-2-Recovered copy.png" Stretch="Fill"/>
         </StackPanel>
 
-        <!--ContentPanel contains LongListSelector and LongListSelector ItemTemplate. Place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <phone:LongListSelector x:Name="MainLongListSelector" Margin="0,0,-12,0" ItemsSource="{Binding Items}" SelectionChanged="MainLongListSelector_SelectionChanged">
-                <phone:LongListSelector.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Margin="0,0,0,17">
-                            <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                            <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Margin="12,-6,12,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </phone:LongListSelector.ItemTemplate>
-            </phone:LongListSelector>
-        </Grid>
+        <!--ContentPanel - place additional content here-->
+        <ScrollViewer HorizontalAlignment="Left" Height="658" Margin="12,4,0,-100" VerticalAlignment="Top" Width="456" Grid.Row="1">
+            <Grid Height="752" Width="456">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="115*"/>
+                    <ColumnDefinition Width="113*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="tzilom_dayar" Content="צילום דייר&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="0,514,5,81" Width="225" Height="157"/>
+                <Button x:Name="odot" Content="אודות&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="-2,175,7,420" Width="225" Height="157">
 
+                </Button>
+                <Button x:Name="did_you_know" Content="הידעת&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="229,175,2,420" Width="225" Height="157" Grid.ColumnSpan="2">
+
+                </Button>
+                <Button x:Name="contact_us" Content="צור קשר&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="229,344,2,251" Width="225" Grid.ColumnSpan="2">
+
+                </Button>
+                <Button x:Name="hanoyot_ve_avizarim" Content="חנויות &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="-2,344,7,251" Width="225" Height="157"/>
+                <Button x:Name="ashaf" Content="אשף הבטיחות            &#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="-2,2,2,603" Grid.ColumnSpan="2" Height="157" Click="ashaf_Click">
+
+                </Button>
+                <Button x:Name="takanon" Content="תקנון&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="229,514,2,81" Width="225" Height="157" Grid.ColumnSpan="2">
+
+                </Button>
+                <Image Margin="52,0,50,250" Source="Assets/email.png" Stretch="Fill" Height="124" Width="124" VerticalAlignment="Bottom" Grid.Column="1"/>
+                <Image Margin="48,542,0,86" Source="Assets/camera.png" Stretch="Fill" Width="124" Height="124" HorizontalAlignment="Left"/>
+                <Image Margin="52,207,50,421" Source="Assets/question.png" Stretch="Fill" Width="124" Height="124" Grid.Column="1"/>
+                <Image Margin="74,576,72,96" Source="Assets/patish.png" Stretch="Fill" Width="80" Height="80" Grid.Column="1"/>
+                <Image Margin="48,0,0,248" Source="Assets/home1.png" Stretch="Fill" Width="124" Height="124" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                <Image Margin="58,39,63,608" Source="Assets/checklist 2.png" Stretch="Fill" Width="105" Grid.Column="1"/>
+                <Image Source="Assets/I.png" Stretch="Fill" Margin="48,209,0,419" Width="124" Height="124" HorizontalAlignment="Left"/>
+
+            </Grid>
+        </ScrollViewer>
+        <Grid x:Name="ContentPanel" RenderTransformOrigin="1.237,0.451" Margin="12,0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="157*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="157*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="157*"/>
+                <RowDefinition Height="30*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
             aligned on common boundaries.  The image has a top margin of -32px to
@@ -67,7 +107,6 @@
 
             Before shipping remove this XAML and the image itself.-->
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
-        
     </Grid>
 
 </phone:PhoneApplicationPage>
