@@ -68,10 +68,10 @@
             </Grid.ColumnDefinitions>
 
             <Button x:Name="my_reports" Grid.Row="4" Foreground="White" FontSize="30.667" BorderBrush="#00000000" Background="#FF4A78A8" Content="הדוחות שלי&#xD;&#xA;&#xD;&#xA;"/>
-            <Button x:Name="outside" Grid.Row="2" Foreground="White" BorderBrush="#00000000" FontSize="30.667" Background="#FF4A78A8" Content="מחוץ לבית&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <Button x:Name="Outside" Grid.Row="2" Foreground="White" BorderBrush="#00000000" FontSize="30.667" Background="#FF4A78A8" Content="מחוץ לבית&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Click="Button_Click">
 
             </Button>
-            <Button x:Name="inside" FlowDirection="RightToLeft" Foreground="White" FontSize="30.667" BorderBrush="#00000000" Background="#FF4A78A8" Content="בתוך הבית&#xD;&#xA;&#xD;&#xA;">
+            <Button x:Name="Inside" FlowDirection="RightToLeft" Foreground="White" FontSize="30.667" BorderBrush="#00000000" Background="#FF4A78A8" Content="בתוך הבית&#xD;&#xA;&#xD;&#xA;" Click="Button_Click">
 
             </Button>
 

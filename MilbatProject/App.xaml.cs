@@ -94,7 +94,7 @@ namespace MilbatProject
             // Ensure that application state is restored appropriately
             if (!QuestionsPage.DB.IsDataLoaded)
             {
-                QuestionsPage.DB.LoadData();
+                //QuestionsPage.DB.LoadData();
             }
         }
 

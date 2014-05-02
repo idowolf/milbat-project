@@ -16,5 +16,10 @@ namespace MilbatProject
         {
             InitializeComponent();
         }
+
+        private void Next_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/QuestionsPage.xaml", UriKind.Relative));
+        }
     }
 }

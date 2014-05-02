@@ -12,9 +12,18 @@ namespace MilbatProject
 {
     public partial class WizardInsideHousePage : PhoneApplicationPage
     {
+        //public string[] RoomNames = { "Door", "Hallway", "Livingroom", "Kitchen", "Bathtub", "Shower",
+          //                                       "Restroom", "Bedroom", "Misc", "InsideStaircase", "OutsideStaircase", 
+            //                                     "Yard", "Lift" };
         public WizardInsideHousePage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            QuestionsPage.DBSender = ((sender as Button).Name);
+            NavigationService.Navigate(new Uri("/RoomPropertiesPage.xaml", UriKind.Relative));
         }
     }
 }

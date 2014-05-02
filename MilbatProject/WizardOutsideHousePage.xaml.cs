@@ -16,5 +16,10 @@ namespace MilbatProject
         {
             InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            QuestionsPage.DBSender = ((sender as Button).Name);
+            NavigationService.Navigate(new Uri("/RoomPropertiesPage.xaml", UriKind.Relative));
+        }
     }
 }
