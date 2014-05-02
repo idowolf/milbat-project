@@ -16,10 +16,6 @@ namespace MilbatProject.ViewModels
         {
             this.Items = new ObservableCollection<MainPageListViewModel>();
             LoadMenuList();
-            if (!QuestionsPage.DB.IsDataLoaded)
-            {
-                QuestionsPage.DB.LoadData();
-            }
         }
         /// <summary>
         /// A collection for ItemViewModel objects.

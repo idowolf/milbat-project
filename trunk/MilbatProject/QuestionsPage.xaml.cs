@@ -15,7 +15,14 @@ namespace MilbatProject
     public partial class QuestionsPage : PhoneApplicationPage
     {
         private static WizardViewModel dB = null;
+        private static string dBSender;
 
+        public static string DBSender
+        {
+            get { return dBSender; }
+            set { dBSender = value; }
+        }
+        
         /// <summary>
         /// A static ViewModel used by the views to bind against.
         /// </summary>
@@ -40,11 +47,10 @@ namespace MilbatProject
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }
-
+        private int y = 0;
         // When page is navigated to set data context to selected item in list
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            int y = 0;
             if (DataContext == null)
             {
                 if (NavigationContext.QueryString.TryGetValue("selectedItem", out selectedIndex))
@@ -52,24 +58,48 @@ namespace MilbatProject
                     y = Array.IndexOf(dB.ItemIDs, selectedIndex);
                         //.[dB.ItemIDs[index]];
                 }
+                else
+                {
+                    dB = new WizardViewModel();
+                    dB.LoadData(DBSender);
+                }
             }
+            if (y == 0)
+                (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
+            else
+                (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
+            if (y == dB.QuestionsCollection.Count() - 1)
+                (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
+            else
+                (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = true;
             DataContext = dB.QuestionsCollection[y];
         }
 
-        private void Nextbutton_Click(object sender, RoutedEventArgs e)
+
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
-            if (Array.IndexOf(dB.ItemIDs, selectedIndex) < (dB.QuestionsCollection.Count() - 1))
+
+        }
+
+        private void Nextbutton_Click(object sender, EventArgs e)
+        {
+            //if (Array.IndexOf(dB.ItemIDs, selectedIndex) < (dB.QuestionsCollection.Count() - 1))
+            if(y < dB.QuestionsCollection.Count() - 1)
             {
-                NavigationService.Navigate(new Uri("/WizardPage.xaml?selectedItem=" + dB.QuestionsCollection[Array.IndexOf(dB.ItemIDs, selectedIndex)+1].ID, UriKind.Relative));
+                //NavigationService.Navigate(new Uri("/QuestionsPage.xaml?selectedItem=" + dB.QuestionsCollection[Array.IndexOf(dB.ItemIDs, selectedIndex) + 1].ID, UriKind.Relative));
+                NavigationService.Navigate(new Uri("/QuestionsPage.xaml?selectedItem=" + dB.QuestionsCollection[y + 1].ID, UriKind.Relative));
                 int x = Array.IndexOf(dB.ItemIDs, selectedIndex) + 1;
             }
         }
 
-        private void Previousbutton_Click(object sender, RoutedEventArgs e)
+        private void Previousbutton_Click(object sender, EventArgs e)
         {
-            if (Array.IndexOf(dB.ItemIDs, selectedIndex) > 0)
+            //if (Array.IndexOf(dB.ItemIDs, selectedIndex) > 0)
+            if (y > 0)
             {
-                NavigationService.Navigate(new Uri("/QuestionsPage.xaml?selectedItem=" + dB.QuestionsCollection[Array.IndexOf(dB.ItemIDs, selectedIndex) - 1].ID, UriKind.Relative));
+                //NavigationService.Navigate(new Uri("/QuestionsPage.xaml?selectedItem=" + dB.QuestionsCollection[Array.IndexOf(dB.ItemIDs, selectedIndex) - 1].ID, UriKind.Relative));
+                NavigationService.Navigate(new Uri("/QuestionsPage.xaml?selectedItem=" + dB.QuestionsCollection[y - 1].ID, UriKind.Relative));
                 int x = Array.IndexOf(dB.ItemIDs, selectedIndex) + 1;
             }
         }

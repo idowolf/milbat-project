@@ -8,6 +8,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Input;
+using MilbatProject;
 
 namespace MilbatProject.ViewModels
 {
@@ -92,10 +93,11 @@ namespace MilbatProject.ViewModels
         /// <summary>
         /// Creates and adds a few ItemViewModel objects into the QuestionsCollection collection.
         /// </summary>
-        public void LoadData()
+        public void LoadData(string RoomName)
         {
             // Sample data; replace with real data
             var data = from item in doc.Descendants("record")
+                       where (string)item.Parent.Attribute("Name")==RoomName
                        select new QuestionViewModel
                        {	//other tags within the xml
                            ID = item.Element("ID").Value.ToString(),

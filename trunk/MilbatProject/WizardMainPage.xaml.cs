@@ -16,5 +16,10 @@ namespace MilbatProject
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Wizard"+(sender as Button).Name+"HousePage.xaml", UriKind.Relative));
+        }
     }
 }

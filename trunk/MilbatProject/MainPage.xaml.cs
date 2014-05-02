@@ -25,7 +25,41 @@ namespace MilbatProject
 
         private void ashaf_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/WizardOutsideHousePage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/WizardMainPage.xaml", UriKind.Relative));
+            WizardResultsViewModel wz = new WizardResultsViewModel();
+            wz.HouseID = "הבית של עידו";
+            wz.RoomName = "חדר מחשב";
+            wz.InsertNewRoom();
+        }
+
+        private void did_you_know_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/DidYouKnowPage.xaml", UriKind.Relative));
+        }
+
+        private void odot_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/AboutPage.xaml", UriKind.Relative));
+        }
+
+        private void contact_us_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/ContactPage.xaml", UriKind.Relative));
+        }
+
+        private void hanoyot_ve_avizarim_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void takanon_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/DisclaimerPage.xaml", UriKind.Relative));
+        }
+
+        private void tzilom_dayar_Click(object sender, RoutedEventArgs e)
+        {
+
         }
         //    // Set the data context of the LongListSelector control to the sample data
 

@@ -29,63 +29,63 @@
             <phone:PanoramaItem x:Name="door" Header="דלת כניסה" HorizontalContentAlignment="Stretch" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid Height="477" Width="420">
                     <Image Source="Assets/דלת כניסה.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="Door" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="ambatia_room" Header="חדר אמבטיה" FlowDirection="RightToLeft" FontSize="64" Foreground="Black">
                 <Grid FlowDirection="RightToLeft">
                     <Image Source="Assets/חדר אמבטיה.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="Bathtub" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="miklahat_room" Header="חדר מקלחת" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="/Assets/חדר מקלחת.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="Shower" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="sleeping_room" Header="חדר שינה" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/חדר שינה.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="Bedroom" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="shirotim" Header="חדר שירותים" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/שירותים.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="Restroom" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="madregot" Header="מדרגות בבית" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/מדרגות בתוך הבית.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="InsideStaircase" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="kitchen" Header="מטבח" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/מטבח.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="Kitchen" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="living_room" Header="סלון" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/סלון.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="Livingroom" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="prozdorim" Header="פרוזדורים" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/פרוזדורים.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black">
+                    <Button x:Name="Hallway" Content="החל בסריקה" Margin="0,402,182,0" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>

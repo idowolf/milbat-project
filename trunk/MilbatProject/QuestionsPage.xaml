@@ -16,8 +16,8 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar Mode="Default">
-            <shell:ApplicationBarIconButton Text="המשך" IconUri="/Assets/AppBar/back.png"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור"/>
+            <shell:ApplicationBarIconButton x:Name="NextButton" Text="המשך" IconUri="/Assets/AppBar/back.png" Click="Nextbutton_Click" />
+            <shell:ApplicationBarIconButton x:Name="BackButton" IconUri="/Assets/AppBar/next.png" Text="חזור"  Click="Previousbutton_Click" />
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
