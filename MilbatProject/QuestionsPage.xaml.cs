@@ -16,9 +16,8 @@ namespace MilbatProject
     public partial class QuestionsPage : PhoneApplicationPage
     {
         private static WizardViewModel dB = null;
-        private static string dBSender, imagePath;
+        private static string dBSender;
         private int questionResult;
-
 
         public static string DBSender
         {
@@ -55,6 +54,7 @@ namespace MilbatProject
         // When page is navigated to set data context to selected item in list
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            no.IsChecked = true;
             questionResult = 0;
             if (DataContext == null)
             {
@@ -84,7 +84,7 @@ namespace MilbatProject
                 (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
             }
             DataContext = dB.QuestionsCollection[y];
-            imagePath = "Assets/WizardAssets/Questions/" + dB.QuestionsCollection[y].ID + ".jpg";
+            dB.QuestionsCollection[y].ImagePath = "Assets/WizardAssets/Questions/" + dB.QuestionsCollection[y].ID + ".jpg";
         }
 
 
@@ -121,16 +121,22 @@ namespace MilbatProject
         private void yes_Click(object sender, RoutedEventArgs e)
         {
             questionResult = 1;
+            takin_helkit.IsChecked = false;
+            no.IsChecked = false;
         }
 
         private void takin_helkit_Click(object sender, RoutedEventArgs e)
         {
             questionResult = 0;
+            yes.IsChecked = false;
+            no.IsChecked = false;
         }
 
         private void no_Click(object sender, RoutedEventArgs e)
         {
             questionResult = 0;
+            yes.IsChecked = false;
+            takin_helkit.IsChecked = false;
         }
 
         private void Finish_Click(object sender, EventArgs e)

@@ -78,6 +78,24 @@ namespace MilbatProject.ViewModels
             }
         }
 
+        private string _imagePath;
+
+        public string ImagePath
+        {
+            get
+            {
+                return _imagePath;
+            }
+            set
+            {
+                if (value != _imagePath)
+                {
+                    _imagePath = value;
+                    NotifyPropertyChanged("ImagePath");
+                }
+            }        }
+        
+
         private string _lineThree;
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
