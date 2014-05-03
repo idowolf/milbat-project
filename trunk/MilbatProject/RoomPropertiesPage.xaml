@@ -42,8 +42,8 @@
                 <RowDefinition Height="80*"/>
                 <RowDefinition Height="70*"/>
             </Grid.RowDefinitions>
-            <TextBox x:Name="name" TextWrapping="Wrap" Text="" FlowDirection="RightToLeft" Grid.Row="1" FontSize="26.667" BorderBrush="#BF000000"/>
-            <TextBox x:Name="room" TextWrapping="Wrap" Text="" FlowDirection="RightToLeft" Grid.Row="4" Foreground="Black" BorderBrush="#BF000000"/>
+            <TextBox x:Name="name" TextWrapping="Wrap" Text="הקלד את שם הדייר כאן..." FlowDirection="RightToLeft" Grid.Row="1" FontSize="26.667" BorderBrush="#BF000000" GotFocus="name_GotFocus" LostFocus="name_LostFocus"/>
+            <TextBox x:Name="room" TextWrapping="Wrap" Text="הקלד את שם החדר כאן..." FlowDirection="RightToLeft" Grid.Row="4" Foreground="Black" BorderBrush="#BF000000" GotFocus="room_GotFocus" LostFocus="room_LostFocus"/>
             <TextBlock x:Name="rooom_block" TextWrapping="Wrap" FlowDirection="RightToLeft" FontSize="33.333" Grid.Row="3" Foreground="Black">
         		<Run FontSize="46.667" Text="חדר"/>
         		<LineBreak/>
