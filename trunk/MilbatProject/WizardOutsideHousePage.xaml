@@ -14,8 +14,7 @@
     shell:SystemTray.IsVisible="True">
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar Mode="Default">
-            <shell:ApplicationBarIconButton Text="המשך" IconUri="/Assets/AppBar/back.png"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="Back_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
     
@@ -27,7 +26,7 @@
             <phone:PanoramaItem x:Name="madregot" Header="חדר מדרגות" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/חדר מדרגות חיצוני.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" FontWeight="Bold" FontSize="26.667" Foreground="Black" BorderBrush="Black" Click="Button_Click">
+                    <Button Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Foreground="Black" BorderBrush="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
@@ -36,14 +35,14 @@
             <phone:PanoramaItem x:Name="yard" Header="חצר" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/חצר.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="Black" Foreground="Black" Click="Button_Click">
+                    <Button Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="Black" Foreground="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="elevator" Header="מעלית" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/מעלית.jpg" Stretch="Fill"/>
-                    <Button Content="החל בסריקה" Margin="0,402,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="Black" Foreground="Black" Click="Button_Click">
+                    <Button Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="Black" Foreground="Black" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>

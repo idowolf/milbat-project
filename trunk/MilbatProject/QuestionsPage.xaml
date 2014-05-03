@@ -18,6 +18,7 @@
         <shell:ApplicationBar Mode="Default">
             <shell:ApplicationBarIconButton x:Name="NextButton" Text="המשך" IconUri="/Assets/AppBar/back.png" Click="Nextbutton_Click" />
             <shell:ApplicationBarIconButton x:Name="BackButton" IconUri="/Assets/AppBar/next.png" Text="חזור"  Click="Previousbutton_Click" />
+            <shell:ApplicationBarIconButton Text="שמור,המשך" IconUri="/Assets/AppBar/save.png" Click="Finish_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
@@ -55,15 +56,15 @@
             <TextBlock TextWrapping="Wrap" Text="{Binding LineTwo}" VerticalAlignment="Top" FontSize="24" Margin="23,80,19,0" Height="104" Foreground="Black"/>
 
         </Grid>
-        <Button x:Name="yes" Margin="0,28" Grid.Row="2" Height="135" VerticalAlignment="Center" Grid.Column="1" BorderBrush="#FFFC5207" Background="White" Foreground="Black">
+        <Button x:Name="yes" Margin="0,28" Grid.Row="2" Height="135" VerticalAlignment="Center" Grid.Column="1" BorderBrush="#FFFC5207" Background="White" Foreground="Black" Click="yes_Click">
             <Image Source="Assets/1398731078_camera_test.png" Stretch="Fill"/>
         </Button>
-        <Button x:Name="no" VerticalAlignment="Center" Margin="18,28,0,28" Grid.Row="2" Height="135" Grid.Column="4" Grid.ColumnSpan="2" Background="White" BorderBrush="#FFFC5207" Width="135" Foreground="Black">
+        <Button x:Name="no" VerticalAlignment="Center" Margin="18,28,0,28" Grid.Row="2" Height="135" Grid.Column="4" Grid.ColumnSpan="2" Background="White" BorderBrush="#FFFC5207" Width="135" Foreground="Black" Click="no_Click">
             <Image Source="Assets/1398731016_DeleteRed.png" Stretch="Fill"/>
         </Button>
         <Image Source="1.jpg" Stretch="Fill" Grid.ColumnSpan="5" Grid.Row="3" Grid.Column="1"/>
         <Image Grid.ColumnSpan="6" Grid.Row="3"/>
-        <Button x:Name="takin_helkit" VerticalAlignment="Center" Margin="0,28" Grid.Row="2" Height="135" Grid.Column="3" BorderBrush="#FFFC5207" Background="White" Width="135" Foreground="Black">
+        <Button x:Name="takin_helkit" VerticalAlignment="Center" Margin="0,28" Grid.Row="2" Height="135" Grid.Column="3" BorderBrush="#FFFC5207" Background="White" Width="135" Foreground="Black" Click="takin_helkit_Click">
             <Image Source="Assets/takin helkit.png" Stretch="Fill"/>
         </Button>
     </Grid>

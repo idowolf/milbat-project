@@ -12,14 +12,36 @@ namespace MilbatProject
 {
     public partial class RoomPropertiesPage : PhoneApplicationPage
     {
+        public static string SelectedHouseID;
+        public static string SelectedRoomName;
+        private string selectedIndex = "";
         public RoomPropertiesPage()
         {
             InitializeComponent();
+            DataContext = App.ResultsViewModel;
+            App.ResultsViewModel.CreateNewFileIfNecessary();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            NavigationContext.QueryString.TryGetValue("sender", out selectedIndex);
+        }
         private void Next_Click(object sender, EventArgs e)
         {
-            NavigationService.Navigate(new Uri("/QuestionsPage.xaml", UriKind.Relative));
+            if(name.Text!="")
+            { 
+                App.ResultsViewModel.HouseID = name.Text;
+                SelectedHouseID = name.Text;
+                App.ResultsViewModel.RoomName = room.Text;
+                SelectedRoomName = room.Text;
+                NavigationService.Navigate(new Uri("/QuestionsPage.xaml", UriKind.Relative));
+            }
+            else
+                MessageBox.Show("חובה להכניס את שם הבית!");
+        }
+        private void Back_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Wizard" + selectedIndex + "HousePage.xaml", UriKind.Relative));
         }
     }
 }
