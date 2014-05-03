@@ -26,5 +26,10 @@ namespace MilbatProject
         {
             NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
+
+        private void my_reports_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MyReports.xaml", UriKind.Relative));
+        }
     }
 }

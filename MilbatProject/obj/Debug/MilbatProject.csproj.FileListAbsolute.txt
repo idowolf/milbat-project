@@ -43,3 +43,6 @@ C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\o
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\DisclaimerPage.g.cs
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MyReports.g.cs
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\WizardInsideHousePage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MyReportsInsideHouse.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MyReportsInsideRoom.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MyReportsInsideRecord.g.cs

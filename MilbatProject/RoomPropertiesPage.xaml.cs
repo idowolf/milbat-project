@@ -28,7 +28,7 @@ namespace MilbatProject
         }
         private void Next_Click(object sender, EventArgs e)
         {
-            if(name.Text!="")
+            if(name.Text!="" && room.Text!="")
             { 
                 App.ResultsViewModel.HouseID = name.Text;
                 SelectedHouseID = name.Text;
@@ -37,7 +37,7 @@ namespace MilbatProject
                 NavigationService.Navigate(new Uri("/QuestionsPage.xaml", UriKind.Relative));
             }
             else
-                MessageBox.Show("חובה להכניס את שם הבית!");
+                MessageBox.Show("חובה להכניס את שם הבית והחדר!");
         }
         private void Back_Click(object sender, EventArgs e)
         {

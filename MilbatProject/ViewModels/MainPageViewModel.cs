@@ -27,7 +27,7 @@ namespace MilbatProject.ViewModels
             this.Items.Add(new MainPageListViewModel() { ID = "2", LineOne = "הידעת?", LineTwo = "", LineThree = "" });
             this.Items.Add(new MainPageListViewModel() { ID = "3", LineOne = "אודות העמותה", LineTwo = "", LineThree = "" });
             this.Items.Add(new MainPageListViewModel() { ID = "4", LineOne = "צור קשר", LineTwo = "", LineThree = "" });
-            this.Items.Add(new MainPageListViewModel() { ID = "4", LineOne = "תקנון משפטי", LineTwo = "", LineThree = "" });
+            this.Items.Add(new MainPageListViewModel() { ID = "5", LineOne = "תקנון משפטי", LineTwo = "", LineThree = "" });
 
         }
 

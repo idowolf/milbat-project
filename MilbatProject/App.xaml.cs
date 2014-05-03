@@ -14,6 +14,21 @@ namespace MilbatProject
     public partial class App : Application
     {
         private static MainPageViewModel viewModel = null;
+        private static WizardViewModel allquestionsviewModel = null;
+
+        public static WizardViewModel AllQuestionsViewModel
+        {
+            get
+            {
+                // Delay creation of the view model until necessary
+                if (allquestionsviewModel == null)
+                    allquestionsviewModel = new WizardViewModel();
+
+                return allquestionsviewModel;
+            }
+            set { allquestionsviewModel = value; }
+        }
+        
 
         /// <summary>
         /// A static ViewModel used by the views to bind against.
