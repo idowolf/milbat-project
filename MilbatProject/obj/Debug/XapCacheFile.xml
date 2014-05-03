@@ -1,6 +1,6 @@
-﻿<xapCache source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\MilbatProject_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03/05/2014 19:26:19">
-  <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="03/05/2014 17:10:08" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MilbatProject.dll" archivePath="MilbatProject.dll" lastWriteTime="03/05/2014 19:26:17" />
+﻿<xapCache source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\MilbatProject_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03/05/2014 20:01:12">
+  <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="03/05/2014 19:49:18" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MilbatProject.dll" archivePath="MilbatProject.dll" lastWriteTime="03/05/2014 20:01:10" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\1.jpg" archivePath="1.jpg" lastWriteTime="01/05/2014 22:04:58" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\1398731078_camera_test.png" archivePath="1398731078_camera_test.png" lastWriteTime="01/05/2014 22:04:58" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\1398731016_DeleteRed.png" archivePath="Assets\1398731016_DeleteRed.png" lastWriteTime="01/05/2014 21:41:45" />
@@ -147,6 +147,6 @@
   <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="01/05/2014 21:24:17" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="01/05/2014 21:24:08" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="01/05/2014 21:24:27" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="03/05/2014 19:26:18" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="03/05/2014 17:10:08" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="03/05/2014 20:01:12" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="03/05/2014 19:49:19" />
 </xapCache>

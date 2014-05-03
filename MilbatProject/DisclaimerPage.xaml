@@ -11,11 +11,11 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/save.png" Text="שמור"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/save.png" Text="שמור" Click="ApplicationBarIconButton_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
@@ -54,7 +54,7 @@
             </TextBlock>
 
         </Grid>
-        <CheckBox Content="בעת סימון זה אני מאשר את התקנון" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Margin="0,462,0,0" Foreground="Black" BorderBrush="Black" Width="476"/>
+        <CheckBox x:Name="UserDisclaimerSign" Content="בעת סימון זה אני מאשר את התקנון" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Margin="0,462,0,0" Foreground="Black" BorderBrush="Black" Width="476" Checked="UserDisclaimerSign_Checked"/>
     </Grid>
 
 </phone:PhoneApplicationPage>

@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="ViewModels\House.cs" />
     <Compile Include="ViewModels\Room.cs" />
+    <Compile Include="ViewModels\DisclaimerPageViewModel.cs" />
     <Compile Include="ViewModels\SuggestionsViewModel.cs" />
     <Compile Include="ViewModels\QuestionViewModel.cs" />
     <Compile Include="ViewModels\MainPageListViewModel.cs" />
