@@ -273,6 +273,14 @@
     <Content Include="Assets\AppBar\next.png" />
     <Content Include="Assets\AppBar\questionmark.png" />
     <Content Include="Assets\AppBar\save.png" />
+    <SplashScreen Include="SplashScreenImage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </SplashScreen>
+    <Content Include="Assets\SquareTile150x150.png" />
+    <Content Include="Assets\SquareTile71x71.png" />
+    <Content Include="Assets\StoreLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -288,7 +296,6 @@
     <Content Include="Assets\I.png" />
     <Content Include="Assets\Image1.png" />
     <Content Include="Assets\in home.png" />
-    <Content Include="Assets\Logo.png" />
     <Content Include="Assets\patish.png" />
     <Content Include="Assets\question.png" />
     <Content Include="Assets\reports.png" />
@@ -297,10 +304,6 @@
     <Content Include="Assets\SafetyMeasure25.png" />
     <Content Include="Assets\SafetyMeasure50.png" />
     <Content Include="Assets\SafetyMeasure75.png" />
-    <Content Include="Assets\SplashScreen.png" />
-    <Content Include="Assets\SquareTile150x150.png" />
-    <Content Include="Assets\SquareTile71x71.png" />
-    <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\takin helkit.png" />
     <Content Include="Assets\Untitled-2-Recovered copy.png" />
     <Content Include="Assets\WideLogo.png" />
@@ -319,6 +322,7 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Logo.png" />
     <Content Include="Assets\WizardAssets\Questions\01.01.01.jpg" />
     <Content Include="Assets\WizardAssets\Questions\01.01.02.jpg" />
     <Content Include="Assets\WizardAssets\Questions\01.01.03.jpg" />
@@ -503,21 +507,21 @@
     <Content Include="Assets\WizardAssets\Suggestions\02.12.03.jpg" />
     <Content Include="Assets\WizardAssets\Suggestions\02.13.01.jpg" />
     <Content Include="Assets\WizardAssets\Suggestions\02.13.02.jpg" />
-    <Content Include="Assets\דלת כניסה.jpg" />
-    <Content Include="Assets\חדר אמבטיה.jpg" />
-    <Content Include="Assets\חדר מדרגות חיצוני.jpg" />
-    <Content Include="Assets\חדר מקלחת.jpg" />
-    <Content Include="Assets\חדר שינה.jpg" />
-    <Content Include="Assets\חצר.jpg" />
-    <Content Include="Assets\כללי .png" />
-    <Content Include="Assets\כללי בבית.jpg" />
-    <Content Include="Assets\כללי.jpg" />
-    <Content Include="Assets\מדרגות בתוך הבית.jpg" />
-    <Content Include="Assets\מטבח.jpg" />
-    <Content Include="Assets\מעלית.jpg" />
-    <Content Include="Assets\סלון.jpg" />
-    <Content Include="Assets\פרוזדורים.jpg" />
-    <Content Include="Assets\שירותים.jpg" />
+    <Content Include="Assets\EntranceDoorpic.jpg" />
+    <Content Include="Assets\Bathpic.jpg" />
+    <Content Include="Assets\OutsideStairspic.jpg" />
+    <Content Include="Assets\ShowerroomImage.jpg" />
+    <Content Include="Assets\Bedroompic.jpg" />
+    <Content Include="Assets\Yardpic.jpg" />
+    <Content Include="Assets\Miscpic.png" />
+    <Content Include="Assets\Miscpicc.jpg" />
+    <Content Include="Assets\Miscpiccc.jpg" />
+    <Content Include="Assets\outsidestaircasepic.jpg" />
+    <Content Include="Assets\kitchennn.jpg" />
+    <Content Include="Assets\lifty.jpg" />
+    <Content Include="Assets\livingroompic.jpg" />
+    <Content Include="Assets\prozdores.jpg" />
+    <Content Include="Assets\bathroompic.jpg" />
     <Content Include="logo.png" />
     <Content Include="MilbatDatabase.xml">
       <SubType>Designer</SubType>

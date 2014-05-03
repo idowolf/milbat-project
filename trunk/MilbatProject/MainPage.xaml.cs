@@ -20,7 +20,6 @@ namespace MilbatProject
         {
             InitializeComponent();
             DataContext = App.ViewModel;
-
         }
 
         private void ashaf_Click(object sender, RoutedEventArgs e)

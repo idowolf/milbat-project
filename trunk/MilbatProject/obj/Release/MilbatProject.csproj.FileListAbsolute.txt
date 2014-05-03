@@ -49,3 +49,4 @@ C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\o
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Release\ProjectArchitectures.txt
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Release\MDILProjectFiles.xml
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Release\XapCacheFile.xml
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Release\Assets\StoreLogo.png

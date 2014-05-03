@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\wp-results.xsl'?>
+<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsPhone" PUBLISHER_DISPLAY_NAME="Ido" APP_NAME="19f3d769-32fb-4fe7-8727-298191f8d4ea" APP_VERSION="1.0.0.0" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1037" VALIDATION_TYPE="UI" ReportGenerationTime="04/05/2014 02:11:25" ID="f4361cc813bd1603f689782bbef8bbf1">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
+    <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
+    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus." />
+    <REQUIREMENT NUMBER="4" TITLE="Support x64 Windows test" RATIONALE="To maintain compatibility with 64-bit versions of Windows, it is necessary that applications should natively support 64-bit or at minimum 32-bit Windows based applications to run seamlessly on 64-bit." />
+    <REQUIREMENT NUMBER="5" TITLE="OS version checking test" RATIONALE="Applications must not perform version checks for equality (== 5.1). If you need a specific feature, check whether the feature is available. If you need Windows XP, check for Windows XP or later (&gt;= 5.1), This way, your detection code will continue to work on future versions of Windows. Driver installers and uninstall modules should never check the OS version." />
+    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." />
+    <REQUIREMENT NUMBER="7" TITLE="Adhere to system restart manager messages" RATIONALE="In a critical shutdown, applications that return FALSE to WM_QUERYENDSESSION will be sent WM_ENDSESSION and closed, while those that time out in response to WM_QUERYENDSESSION will be terminated." />
+    <REQUIREMENT NUMBER="8" TITLE="Safe mode test" RATIONALE="By default, most drivers and services that did not come preinstalled with Windows are not started in Safe Mode. They should remain disabled unless they are needed for basic operations of the system or for diagnostic and recovery purposes." />
+    <REQUIREMENT NUMBER="9" TITLE="Multiuser session test" RATIONALE="Windows users should be able to run concurrent sessions without conflict or disruption.  Applications must ensure that when running in multiple sessions either locally or remotely, the normal functionality of the application should not be impacted. Application settings and data files should not be persisted across users. A user’s privacy and preferences should be isolated to the user’s session." />
+    <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience." />
+    <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.51ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:03s.73ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:02s.02ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="72" NAME="Supported APIs" DESCRIPTION="Windows Phone App must only use supported platform APIs." EXECUTIONTIME="00h:00m:03s.15ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications." />
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:04s.52ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.95ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding." />
+    <REQUIREMENT NUMBER="22" TITLE="Direct3D Feature Test" RATIONALE="App should use the Direct3D capability correctly." />
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." />
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources." />
+    <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:02s.42ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="76" NAME="Package validation" DESCRIPTION="Silverlight apps should pass XAP package validation." EXECUTIONTIME="00h:00m:03s.76ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="High-DPI support" RATIONALE="The application needs to set DPI-aware to make the UI look consistently good across a wide variety of high-DPI display settings." />
+    <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource." />
+  </REQUIREMENTS>
+  <APPLICATIONS />
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis Type="Template">
+      <AitFile ErrorCode="0" Name="MilbatProject.dll" Id="0000d968280f35cd1618d7e434a90e623296cfa408ac">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="mscoree.dll!_CorDllMain" />
+        </AitCategory>
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Array" />
+          <AitFeature Name="System.Array.IndexOf" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
+          <AitFeature Name="System.Collections.Generic.IDictionary`2" />
+          <AitFeature Name="System.Collections.Generic.IEnumerable`1" />
+          <AitFeature Name="System.Collections.Generic.IEnumerator`1" />
+          <AitFeature Name="System.Collections.Generic.List`1" />
+          <AitFeature Name="System.Collections.IEnumerator" />
+          <AitFeature Name="System.Collections.IEnumerator.MoveNext" />
+          <AitFeature Name="System.Collections.IList" />
+          <AitFeature Name="System.Collections.IList.get_Item" />
+          <AitFeature Name="System.Collections.ObjectModel.Collection`1" />
+          <AitFeature Name="System.Collections.ObjectModel.ObservableCollection`1" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute..ctor" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableState" />
+          <AitFeature Name="System.ComponentModel.INotifyPropertyChanged" />
+          <AitFeature Name="System.ComponentModel.PropertyChangedEventArgs" />
+          <AitFeature Name="System.ComponentModel.PropertyChangedEventArgs..ctor" />
+          <AitFeature Name="System.ComponentModel.PropertyChangedEventHandler" />
+          <AitFeature Name="System.ComponentModel.PropertyChangedEventHandler.Invoke" />
+          <AitFeature Name="System.Delegate" />
+          <AitFeature Name="System.Delegate.Combine" />
+          <AitFeature Name="System.Delegate.Remove" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.Debugger" />
+          <AitFeature Name="System.Diagnostics.Debugger.Break" />
+          <AitFeature Name="System.Diagnostics.Debugger.get_IsAttached" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
+          <AitFeature Name="System.Enum" />
+          <AitFeature Name="System.Enum.Parse" />
+          <AitFeature Name="System.EventArgs" />
+          <AitFeature Name="System.EventHandler`1" />
+          <AitFeature Name="System.Func`2" />
+          <AitFeature Name="System.Globalization.CultureInfo" />
+          <AitFeature Name="System.IDisposable" />
+          <AitFeature Name="System.IDisposable.Dispose" />
+          <AitFeature Name="System.IO.FileMode" />
+          <AitFeature Name="System.IO.IsolatedStorage.IsolatedStorageFile" />
+          <AitFeature Name="System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile" />
+          <AitFeature Name="System.IO.IsolatedStorage.IsolatedStorageFile.FileExists" />
+          <AitFeature Name="System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForApplication" />
+          <AitFeature Name="System.IO.IsolatedStorage.IsolatedStorageFileStream" />
+          <AitFeature Name="System.IO.IsolatedStorage.IsolatedStorageFileStream..ctor" />
+          <AitFeature Name="System.IO.Stream" />
+          <AitFeature Name="System.IO.Stream.set_Position" />
+          <AitFeature Name="System.Int32" />
+          <AitFeature Name="System.Int32.Parse" />
+          <AitFeature Name="System.Linq.Enumerable" />
+          <AitFeature Name="System.Linq.Enumerable.Count" />
+          <AitFeature Name="System.Linq.Enumerable.Select" />
+          <AitFeature Name="System.Linq.Enumerable.ToList" />
+          <AitFeature Name="System.Linq.Enumerable.Where" />
+          <AitFeature Name="System.Nullable`1" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Object.ReferenceEquals" />
+          <AitFeature Name="System.Object.ToString" />
+          <AitFeature Name="System.Reflection.Assembly" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCultureAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCultureAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyVersionAttribute..ctor" />
+          <AitFeature Name="System.Resources.NeutralResourcesLanguageAttribute" />
+          <AitFeature Name="System.Resources.NeutralResourcesLanguageAttribute..ctor" />
+          <AitFeature Name="System.Resources.ResourceManager" />
+          <AitFeature Name="System.Resources.ResourceManager..ctor" />
+          <AitFeature Name="System.Resources.ResourceManager.GetString" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+          <AitFeature Name="System.RuntimeTypeHandle" />
+          <AitFeature Name="System.String" />
+          <AitFeature Name="System.String.Concat" />
+          <AitFeature Name="System.String.IndexOf" />
+          <AitFeature Name="System.String.LastIndexOf" />
+          <AitFeature Name="System.String.Substring" />
+          <AitFeature Name="System.String.get_Length" />
+          <AitFeature Name="System.String.op_Equality" />
+          <AitFeature Name="System.String.op_Inequality" />
+          <AitFeature Name="System.Threading.Interlocked" />
+          <AitFeature Name="System.Threading.Interlocked.CompareExchange" />
+          <AitFeature Name="System.Type" />
+          <AitFeature Name="System.Type.GetTypeFromHandle" />
+          <AitFeature Name="System.Type.get_Assembly" />
+          <AitFeature Name="System.Uri" />
+          <AitFeature Name="System.Uri..ctor" />
+          <AitFeature Name="System.UriKind" />
+          <AitFeature Name="System.Windows.Application" />
+          <AitFeature Name="System.Windows.Application..ctor" />
+          <AitFeature Name="System.Windows.Application.LoadComponent" />
+          <AitFeature Name="System.Windows.Application.add_UnhandledException" />
+          <AitFeature Name="System.Windows.Application.get_Current" />
+          <AitFeature Name="System.Windows.Application.get_Host" />
+          <AitFeature Name="System.Windows.Application.get_RootVisual" />
+          <AitFeature Name="System.Windows.Application.set_RootVisual" />
+          <AitFeature Name="System.Windows.ApplicationUnhandledExceptionEventArgs" />
+          <AitFeature Name="System.Windows.Controls.Button" />
+          <AitFeature Name="System.Windows.Controls.CheckBox" />
+          <AitFeature Name="System.Windows.Controls.ContentControl" />
+          <AitFeature Name="System.Windows.Controls.ContentControl.set_Content" />
+          <AitFeature Name="System.Windows.Controls.Control" />
+          <AitFeature Name="System.Windows.Controls.Control.set_IsEnabled" />
+          <AitFeature Name="System.Windows.Controls.Frame" />
+          <AitFeature Name="System.Windows.Controls.Frame.add_Navigated" />
+          <AitFeature Name="System.Windows.Controls.Frame.add_NavigationFailed" />
+          <AitFeature Name="System.Windows.Controls.Frame.remove_Navigated" />
+          <AitFeature Name="System.Windows.Controls.Grid" />
+          <AitFeature Name="System.Windows.Controls.Page" />
+          <AitFeature Name="System.Windows.Controls.Page.get_NavigationContext" />
+          <AitFeature Name="System.Windows.Controls.Page.get_NavigationService" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton.get_IsChecked" />
+          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton.set_IsChecked" />
+          <AitFeature Name="System.Windows.Controls.SelectionChangedEventArgs" />
+          <AitFeature Name="System.Windows.Controls.StackPanel" />
+          <AitFeature Name="System.Windows.Controls.TextBlock" />
+          <AitFeature Name="System.Windows.Controls.TextBox" />
+          <AitFeature Name="System.Windows.Controls.TextBox.get_Text" />
+          <AitFeature Name="System.Windows.FlowDirection" />
+          <AitFeature Name="System.Windows.FrameworkElement" />
+          <AitFeature Name="System.Windows.FrameworkElement.FindName" />
+          <AitFeature Name="System.Windows.FrameworkElement.get_DataContext" />
+          <AitFeature Name="System.Windows.FrameworkElement.get_Name" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_DataContext" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_FlowDirection" />
+          <AitFeature Name="System.Windows.FrameworkElement.set_Language" />
+          <AitFeature Name="System.Windows.Interop.Settings" />
+          <AitFeature Name="System.Windows.Interop.Settings.set_EnableFrameRateCounter" />
+          <AitFeature Name="System.Windows.Interop.SilverlightHost" />
+          <AitFeature Name="System.Windows.Interop.SilverlightHost.get_Settings" />
+          <AitFeature Name="System.Windows.Markup.XmlLanguage" />
+          <AitFeature Name="System.Windows.Markup.XmlLanguage.GetLanguage" />
+          <AitFeature Name="System.Windows.MessageBox" />
+          <AitFeature Name="System.Windows.MessageBox.Show" />
+          <AitFeature Name="System.Windows.MessageBoxButton" />
+          <AitFeature Name="System.Windows.MessageBoxResult" />
+          <AitFeature Name="System.Windows.Navigation.JournalEntry" />
+          <AitFeature Name="System.Windows.Navigation.NavigatedEventHandler" />
+          <AitFeature Name="System.Windows.Navigation.NavigatedEventHandler..ctor" />
+          <AitFeature Name="System.Windows.Navigation.NavigationContext" />
+          <AitFeature Name="System.Windows.Navigation.NavigationContext.get_QueryString" />
+          <AitFeature Name="System.Windows.Navigation.NavigationEventArgs" />
+          <AitFeature Name="System.Windows.Navigation.NavigationEventArgs.get_NavigationMode" />
+          <AitFeature Name="System.Windows.Navigation.NavigationFailedEventArgs" />
+          <AitFeature Name="System.Windows.Navigation.NavigationFailedEventHandler" />
+          <AitFeature Name="System.Windows.Navigation.NavigationFailedEventHandler..ctor" />
+          <AitFeature Name="System.Windows.Navigation.NavigationMode" />
+          <AitFeature Name="System.Windows.Navigation.NavigationService" />
+          <AitFeature Name="System.Windows.Navigation.NavigationService.Navigate" />
+          <AitFeature Name="System.Windows.RoutedEventArgs" />
+          <AitFeature Name="System.Windows.UIElement" />
+          <AitFeature Name="System.Xml.Linq.Extensions" />
+          <AitFeature Name="System.Xml.Linq.Extensions.Elements" />
+          <AitFeature Name="System.Xml.Linq.LoadOptions" />
+          <AitFeature Name="System.Xml.Linq.XAttribute" />
+          <AitFeature Name="System.Xml.Linq.XAttribute..ctor" />
+          <AitFeature Name="System.Xml.Linq.XAttribute.get_Value" />
+          <AitFeature Name="System.Xml.Linq.XAttribute.op_Explicit" />
+          <AitFeature Name="System.Xml.Linq.XContainer" />
+          <AitFeature Name="System.Xml.Linq.XContainer.Add" />
+          <AitFeature Name="System.Xml.Linq.XContainer.Descendants" />
+          <AitFeature Name="System.Xml.Linq.XContainer.Element" />
+          <AitFeature Name="System.Xml.Linq.XDeclaration" />
+          <AitFeature Name="System.Xml.Linq.XDeclaration..ctor" />
+          <AitFeature Name="System.Xml.Linq.XDocument" />
+          <AitFeature Name="System.Xml.Linq.XDocument..ctor" />
+          <AitFeature Name="System.Xml.Linq.XDocument.Load" />
+          <AitFeature Name="System.Xml.Linq.XDocument.Save" />
+          <AitFeature Name="System.Xml.Linq.XDocument.get_Root" />
+          <AitFeature Name="System.Xml.Linq.XElement" />
+          <AitFeature Name="System.Xml.Linq.XElement..ctor" />
+          <AitFeature Name="System.Xml.Linq.XElement.Attribute" />
+          <AitFeature Name="System.Xml.Linq.XElement.get_Value" />
+          <AitFeature Name="System.Xml.Linq.XName" />
+          <AitFeature Name="System.Xml.Linq.XName.op_Implicit" />
+          <AitFeature Name="System.Xml.Linq.XObject" />
+          <AitFeature Name="System.Xml.Linq.XObject.get_Parent" />
+          <AitFeature Name="System.Xml.XmlReader" />
+          <AitFeature Name="System.Xml.XmlReader.Create" />
+        </AitCategory>
+        <AitCategory Id="DotNetWinRt">
+          <AitFeature Name="Windows.ApplicationModel.Activation.IActivatedEventArgs" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>
