@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Microsoft.Phone.Tasks;
 
 namespace MilbatProject
 {
@@ -24,12 +25,21 @@ namespace MilbatProject
 
         private void Mail_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("לא ניתן כעת. \n עמנו הסליחה.");
+            EmailComposeTask emailComposeTask = new EmailComposeTask();
+            emailComposeTask.To = "milbat@netvision.net.il";
+            emailComposeTask.Subject = "הודעה שנשלחה מתוך 'משמרת הזהב'";
+            emailComposeTask.Body = "משתמש יקר, \nאנא צרף הודעתך מטה:";
+            emailComposeTask.Show();
         }
 
         private void Call_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("לא ניתן כעת. \n עמנו הסליחה.");
+            PhoneCallTask phoneCallTask = new PhoneCallTask();
+
+            phoneCallTask.PhoneNumber = "0722230007";
+            phoneCallTask.DisplayName = "עמותת מילבת";
+
+            phoneCallTask.Show();
         }
     }
 }
