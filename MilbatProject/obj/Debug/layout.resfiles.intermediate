@@ -16,6 +16,9 @@ Assets\BadgeLogo.png
 Assets\camera.png
 Assets\checklist 2.png
 Assets\email.png
+Assets\FlipCycleTileLarge.png
+Assets\FlipCycleTileMedium.png
+Assets\FlipCycleTileSmall.png
 Assets\home.png
 Assets\home1.png
 Assets\I.png
@@ -25,6 +28,11 @@ Assets\Logo.png
 Assets\patish.png
 Assets\question.png
 Assets\reports.png
+Assets\SafetyMeasure0.png
+Assets\SafetyMeasure100.png
+Assets\SafetyMeasure25.png
+Assets\SafetyMeasure50.png
+Assets\SafetyMeasure75.png
 Assets\SplashScreen.png
 Assets\SquareTile150x150.png
 Assets\SquareTile71x71.png
@@ -227,6 +235,7 @@ Assets\חדר מדרגות חיצוני.jpg
 Assets\חדר מקלחת.jpg
 Assets\חדר שינה.jpg
 Assets\חצר.jpg
+Assets\כללי .png
 Assets\כללי בבית.jpg
 Assets\כללי.jpg
 Assets\מדרגות בתוך הבית.jpg

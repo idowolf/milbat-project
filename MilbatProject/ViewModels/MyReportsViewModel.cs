@@ -18,6 +18,14 @@ namespace MilbatProject.ViewModels
 {
     public class MyReportsViewModel : INotifyPropertyChanged
     {
+        private List<string> questionTitles = new List<string>();
+
+        public List<string> QuestionTitles
+        {
+            get { return questionTitles; }
+            set { questionTitles = value; }
+        }
+        
         private XDocument doc = XDocument.Load("MilbatDatabase.xml");
         public MyReportsViewModel()
         {
@@ -32,6 +40,50 @@ namespace MilbatProject.ViewModels
             set { _houses = value; }
         }
 
+        public int CalculateSafetyScale(string currentHouse)
+        {
+            int maxCount = 0, housePointer = WheresMyHouse(currentHouse), suggestionCount = 0;
+            double safetyScale = 0;
+
+            for (int i = 0; i < _houses[housePointer].HouseRooms.Count(); i++)
+            {
+                maxCount += _houses[housePointer].HouseRooms[i].RoomMaxQuestions;
+                for (int k = 0; k < _houses[housePointer].HouseRooms[i].RoomRecords.Count(); k++)
+                {
+                    suggestionCount++;
+                }
+            }
+
+            safetyScale = (maxCount - suggestionCount) / (double)maxCount * 100;
+            if (safetyScale >= 0 && safetyScale < 25)
+                safetyScale = 0;
+            else if (safetyScale >= 25 && safetyScale < 50)
+                safetyScale = 25;
+            else if (safetyScale >= 50 && safetyScale < 75)
+                safetyScale = 50;
+            else if (safetyScale >= 75 && safetyScale < 85)
+                safetyScale = 75;
+            else
+                safetyScale = 100;
+
+            return (int)safetyScale;
+        }
+
+        public int GetRoomMaxCount(string title)
+        {
+            return int.Parse(title.Substring(title.IndexOf("מתוך ") + 5));
+        }
+
+        public int WheresMyHouse(string houseName)
+        {
+            for (int i = 0; i < _houses.Count(); i++)
+            {
+                if (_houses[i].LineOne == houseName)
+                    return i;
+            }
+            return 0;
+        }
+
         public void AddCollectionToStructure()
         {
             if (SuggestionsCollection.Count() != 0)
@@ -39,7 +91,7 @@ namespace MilbatProject.ViewModels
                 string currentHouseID = SuggestionsCollection[0].ID, currentRoomID = SuggestionsCollection[0].LineOne;
                 int houseCount = 0, roomCount = 0;
                 _houses.Add(new House(houseCount, currentHouseID));
-                _houses[0].AddNewRoom(new Room(roomCount, currentRoomID));
+                _houses[0].AddNewRoom(new Room(roomCount, currentRoomID,GetRoomMaxCount(questionTitles[0])));
                 for (int i = 0; i < SuggestionsCollection.Count(); i++)
                 {
                     //Add new house if count went up
@@ -54,7 +106,7 @@ namespace MilbatProject.ViewModels
                     if(_houses[houseCount].HouseRooms.Count() - 1 != roomCount)
                     {
                         currentRoomID = SuggestionsCollection[i].LineOne;
-                        _houses[houseCount].AddNewRoom(new Room(roomCount, currentRoomID));
+                        _houses[houseCount].AddNewRoom(new Room(roomCount, currentRoomID,GetRoomMaxCount(questionTitles[0])));
                     }
 
                     if(currentHouseID != SuggestionsCollection[i].ID)
@@ -126,6 +178,8 @@ namespace MilbatProject.ViewModels
         {
             using (IsolatedStorageFile isoStory = IsolatedStorageFile.GetUserStoreForApplication())
             {
+                if(isoStory.FileExists("WizardResults.xml"))
+                { 
                 using (IsolatedStorageFileStream isoStream = new IsolatedStorageFileStream("WizardResults.xml", FileMode.Open, isoStory))
                 {
                     doc = XDocument.Load(isoStream, LoadOptions.PreserveWhitespace);
@@ -140,12 +194,14 @@ namespace MilbatProject.ViewModels
                     List<SuggestionsViewModel> lst = data.ToList();
                     for (int i = 0; i < (lst.Count()); i++)
                     {
+                        questionTitles.Add(DB.QuestionsCollection[i].QuestionTitle);
                         string suggestionID = lst[i].LineTwo;
                         lst[i].LineTwo = DB.QuestionsCollection[Array.IndexOf(DB.ItemIDs, suggestionID)].LineOne;
                         lst[i].LineThree = DB.QuestionsCollection[Array.IndexOf(DB.ItemIDs, suggestionID)].LineTwo;
                         lst[i].LineFour = DB.QuestionsCollection[Array.IndexOf(DB.ItemIDs, suggestionID)].LineThree;
                         this.SuggestionsCollection.Add(lst[i]);
                     }
+                }
                 }
             }
             AddCollectionToStructure();

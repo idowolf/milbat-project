@@ -15,14 +15,14 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.email.png" Text="שליחת מייל"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.phone.png" Text="התקשר"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.email.png" Text="שליחת מייל" Click="Mail_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.phone.png" Text="התקשר" Click="Call_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="Return_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="White" FlowDirection="RightToLeft">
+    <Grid x:Name="LayoutRoot" FlowDirection="RightToLeft">     <Grid.Background>      <SolidColorBrush Color="#FFE1E1E1"/>     </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>

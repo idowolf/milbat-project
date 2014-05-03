@@ -16,14 +16,14 @@
     
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="ApplicationBarIconButton_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/auction_hammer_gavel.png" Text="מחק קובץ" Click="ForceNewFile_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
 
     <!--Data context is set to sample data above and LayoutRoot contains the root grid where all other page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="White" FlowDirection="RightToLeft">
+    <Grid x:Name="LayoutRoot" FlowDirection="RightToLeft">     <Grid.Background>      <SolidColorBrush Color="#FFE1E1E1"/>     </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>

@@ -62,5 +62,10 @@ namespace MilbatProject
             suggestions.LoadData(App.AllQuestionsViewModel);
             DataContext = suggestions;
         }
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        }
     }
 }

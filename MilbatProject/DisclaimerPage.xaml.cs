@@ -28,6 +28,8 @@ namespace MilbatProject
             {
                 UserDisclaimerSign.IsChecked = true;
                 UserDisclaimerSign.IsEnabled = false;
+                ApplicationBarIconButton b = (ApplicationBarIconButton)ApplicationBar.Buttons[0];
+                b.IsEnabled = false; 
                 UserDisclaimerSign.Content = "הנך אישרת את התקנון.";
             }
         }
@@ -43,6 +45,11 @@ namespace MilbatProject
                     UserDisclaimerSign.Content = "תודה על אישור התקנון.";
                 }
             }
+        }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
     }
 }

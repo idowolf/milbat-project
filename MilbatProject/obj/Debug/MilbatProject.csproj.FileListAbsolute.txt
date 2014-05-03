@@ -46,3 +46,6 @@ C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\o
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MyReportsInsideHouse.g.cs
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MyReportsInsideRoom.g.cs
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\MyReportsInsideRecord.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\SplashPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\PictureResidentPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\StoresPage.g.cs

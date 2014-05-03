@@ -119,6 +119,9 @@
     <Compile Include="MyReports.xaml.cs">
       <DependentUpon>MyReports.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PictureResidentPage.xaml.cs">
+      <DependentUpon>PictureResidentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="QuestionsPage.xaml.cs">
       <DependentUpon>QuestionsPage.xaml</DependentUpon>
     </Compile>
@@ -133,6 +136,12 @@
     </Compile>
     <Compile Include="RoomPropertiesPage.xaml.cs">
       <DependentUpon>RoomPropertiesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SplashPage.xaml.cs">
+      <DependentUpon>SplashPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StoresPage.xaml.cs">
+      <DependentUpon>StoresPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\House.cs" />
     <Compile Include="ViewModels\Room.cs" />
@@ -191,6 +200,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PictureResidentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="QuestionsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -211,6 +224,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </DesignData>
+    <Page Include="SplashPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StoresPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WizardInsideHousePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -259,6 +280,9 @@
     <Content Include="Assets\camera.png" />
     <Content Include="Assets\checklist 2.png" />
     <Content Include="Assets\email.png" />
+    <Content Include="Assets\FlipCycleTileLarge.png" />
+    <Content Include="Assets\FlipCycleTileMedium.png" />
+    <Content Include="Assets\FlipCycleTileSmall.png" />
     <Content Include="Assets\home.png" />
     <Content Include="Assets\home1.png" />
     <Content Include="Assets\I.png" />
@@ -268,6 +292,11 @@
     <Content Include="Assets\patish.png" />
     <Content Include="Assets\question.png" />
     <Content Include="Assets\reports.png" />
+    <Content Include="Assets\SafetyMeasure0.png" />
+    <Content Include="Assets\SafetyMeasure100.png" />
+    <Content Include="Assets\SafetyMeasure25.png" />
+    <Content Include="Assets\SafetyMeasure50.png" />
+    <Content Include="Assets\SafetyMeasure75.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\SquareTile150x150.png" />
     <Content Include="Assets\SquareTile71x71.png" />
@@ -480,6 +509,7 @@
     <Content Include="Assets\חדר מקלחת.jpg" />
     <Content Include="Assets\חדר שינה.jpg" />
     <Content Include="Assets\חצר.jpg" />
+    <Content Include="Assets\כללי .png" />
     <Content Include="Assets\כללי בבית.jpg" />
     <Content Include="Assets\כללי.jpg" />
     <Content Include="Assets\מדרגות בתוך הבית.jpg" />
