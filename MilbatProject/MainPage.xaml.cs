@@ -26,10 +26,6 @@ namespace MilbatProject
         private void ashaf_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/WizardMainPage.xaml", UriKind.Relative));
-            WizardResultsViewModel wz = new WizardResultsViewModel();
-            wz.HouseID = "הבית של עידו";
-            wz.RoomName = "חדר מחשב";
-            wz.InsertNewRoom();
         }
 
         private void did_you_know_Click(object sender, RoutedEventArgs e)

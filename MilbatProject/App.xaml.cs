@@ -31,6 +31,22 @@ namespace MilbatProject
             }
         }
 
+        private static WizardResultsViewModel resultsViewModel;
+
+        public static WizardResultsViewModel ResultsViewModel
+        {
+            get
+            {
+                // Delay creation of the view model until necessary
+                if (resultsViewModel == null)
+                    resultsViewModel = new WizardResultsViewModel();
+
+                return resultsViewModel;
+            }
+            set { resultsViewModel = value; }
+        }
+        
+
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
         /// </summary>

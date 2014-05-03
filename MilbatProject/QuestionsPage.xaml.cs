@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using MilbatProject.Resources;
 using MilbatProject.ViewModels;
+using System.Xml.Linq;
 
 namespace MilbatProject
 {
@@ -16,6 +17,7 @@ namespace MilbatProject
     {
         private static WizardViewModel dB = null;
         private static string dBSender;
+        private int questionResult;
 
         public static string DBSender
         {
@@ -51,6 +53,7 @@ namespace MilbatProject
         // When page is navigated to set data context to selected item in list
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            questionResult = 0;
             if (DataContext == null)
             {
                 if (NavigationContext.QueryString.TryGetValue("selectedItem", out selectedIndex))
@@ -69,9 +72,15 @@ namespace MilbatProject
             else
                 (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
             if (y == dB.QuestionsCollection.Count() - 1)
+            {
                 (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
+                (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = true;
+            }
             else
+            {
                 (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = true;
+                (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
+            }
             DataContext = dB.QuestionsCollection[y];
         }
 
@@ -84,6 +93,8 @@ namespace MilbatProject
 
         private void Nextbutton_Click(object sender, EventArgs e)
         {
+            if(questionResult == 0)
+                App.ResultsViewModel.AddNewQuestion(dB.QuestionsCollection[y].ID);
             //if (Array.IndexOf(dB.ItemIDs, selectedIndex) < (dB.QuestionsCollection.Count() - 1))
             if(y < dB.QuestionsCollection.Count() - 1)
             {
@@ -104,20 +115,27 @@ namespace MilbatProject
             }
         }
 
-        // Sample code for building a localized ApplicationBar
-        //private void BuildLocalizedApplicationBar()
-        //{
-        //    // Set the page's ApplicationBar to a new instance of ApplicationBar.
-        //    ApplicationBar = new ApplicationBar();
+        private void yes_Click(object sender, RoutedEventArgs e)
+        {
+            questionResult = 1;
+        }
 
-        //    // Create a new button and set the text value to the localized string from AppResources.
-        //    ApplicationBarIconButton appBarButton = new ApplicationBarIconButton(new Uri("/Assets/AppBar/appbar.add.rest.png", UriKind.Relative));
-        //    appBarButton.Text = AppResources.AppBarButtonText;
-        //    ApplicationBar.Buttons.Add(appBarButton);
+        private void takin_helkit_Click(object sender, RoutedEventArgs e)
+        {
+            questionResult = 0;
+        }
 
-        //    // Create a new menu item with the localized string from AppResources.
-        //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
-        //    ApplicationBar.MenuQuestionsCollection.Add(appBarMenuItem);
-        //}
+        private void no_Click(object sender, RoutedEventArgs e)
+        {
+            questionResult = 0;
+        }
+
+        private void Finish_Click(object sender, EventArgs e)
+        {
+            App.ResultsViewModel.InsertNewRoom();
+            App.ResultsViewModel = null;
+            MessageBox.Show("התשובות נקלטו בהצלחה!");
+            NavigationService.Navigate(new Uri("/WizardMainPage.xaml", UriKind.Relative));
+        }
     }
 }

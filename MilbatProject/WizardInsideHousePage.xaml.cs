@@ -23,7 +23,12 @@ namespace MilbatProject
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             QuestionsPage.DBSender = ((sender as Button).Name);
-            NavigationService.Navigate(new Uri("/RoomPropertiesPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/RoomPropertiesPage.xaml?sender=Inside", UriKind.Relative));
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/WizardMainPage.xaml", UriKind.Relative));
         }
     }
 }

@@ -21,5 +21,10 @@ namespace MilbatProject
         {
             NavigationService.Navigate(new Uri("/Wizard"+(sender as Button).Name+"HousePage.xaml", UriKind.Relative));
         }
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        }
     }
 }

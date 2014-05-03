@@ -15,7 +15,7 @@ using System.Xml;
 
 namespace MilbatProject.ViewModels
 {
-    class WizardResultsViewModel : INotifyPropertyChanged
+    public class WizardResultsViewModel : INotifyPropertyChanged
     {
         private string _houseID;
 
@@ -33,7 +33,7 @@ namespace MilbatProject.ViewModels
             set { _roomName = value; }
         }
 
-        private List<XElement> _questions;
+        private List<XElement> _questions = new List<XElement>();
 
         public List<XElement> Questions
         {
@@ -108,38 +108,30 @@ namespace MilbatProject.ViewModels
         public void InsertNewRoom()
         {
             XDocument doc = null;
-            CreateNewFile(doc); //create the file in isolated storage.
-            ReadIsoStream(doc); //Display file as a new messagebox.
-            OpenAndCloseFile(doc); //Open and save the file, no changes made.
-            ReadIsoStream(doc); //Display file again.
+            if(_houseID!="")
+            { 
+                InsertNewDataSet(doc); //Open and save the file, no changes made.
+                ReadIsoStream(doc); //Display file again.
+            }
         }
 
-        public void OpenAndCloseFile(XDocument doc)
+        public void InsertNewDataSet(XDocument doc)
         {
             using (IsolatedStorageFile isoStory = IsolatedStorageFile.GetUserStoreForApplication())
             {
                 using (IsolatedStorageFileStream isoStream = new IsolatedStorageFileStream("WizardResults.xml", FileMode.Open, isoStory))
                 {
-                    XElement addition = new XElement("house",
-                    new XAttribute("HouseID", "הבית_של_פיסטוק"),
-                    new XElement("room",
-                        new XAttribute("RoomID", "חדר_מחשב"),
-                        new XElement("record",
-                            new XAttribute("RecordID", "01.01.01")
-                            )
-                        )
-                    );
-                    doc = XDocument.Load(isoStream);
-                    doc.Element("houses").Add(addition);
+                    doc = XDocument.Load(isoStream,LoadOptions.PreserveWhitespace);
+                    doc = AddQueryToXML(doc);
                     isoStream.Position = 0;
                     doc.Save(isoStream);
                 }
             }
-            MessageBox.Show(IsRoomExist(doc, "הבית_של_פיטוק", "חדר_מחשב").ToString());
         }
 
-        public void CreateNewFile(XDocument doc)
+        public void CreateNewFileIfNecessary()
         {
+            XDocument doc = null;
             using (IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication())
             {
                 if (!isoStore.FileExists("WizardResults.xml"))
@@ -148,7 +140,7 @@ namespace MilbatProject.ViewModels
                     {
                         XDeclaration dec = new XDeclaration("1.0", "utf-8", "yes");
                         doc = new XDocument(dec, new XElement("houses"));
-                        doc.Save(isoStream, SaveOptions.None);
+                        doc.Save(isoStream);
                     }
                 }
             }
@@ -161,7 +153,7 @@ namespace MilbatProject.ViewModels
                 {
                     using (XmlReader reader = XmlReader.Create(isoStream))
                     {
-                        XDocument xml = XDocument.Load(reader);
+                        XDocument xml = XDocument.Load(reader, LoadOptions.PreserveWhitespace);
 
                         MessageBox.Show(xml.ToString());
                     }
