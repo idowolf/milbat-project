@@ -23,7 +23,10 @@
     </phone:PhoneApplicationPage.ApplicationBar>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="White" d:DataContext="{Binding QuestionsCollection[0]}" FlowDirection="RightToLeft">
+    <Grid x:Name="LayoutRoot" d:DataContext="{Binding QuestionsCollection[0]}" FlowDirection="RightToLeft">
+        <Grid.Background>
+            <SolidColorBrush Color="#FFE1E1E1"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="19*"/>
             <ColumnDefinition Width="135*"/>

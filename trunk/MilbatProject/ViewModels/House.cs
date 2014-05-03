@@ -24,6 +24,15 @@ namespace MilbatProject.ViewModels
             set { _houseID = value; }
         }
 
+        private string _lineTwo;
+
+        public string LineTwo
+        {
+            get { return _lineTwo; }
+            set { _lineTwo = value; }
+        }
+        
+
         private List<Room> _houseRooms;
 
         public List<Room> HouseRooms

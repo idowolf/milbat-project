@@ -26,7 +26,9 @@ namespace MilbatProject
                 if (NavigationContext.QueryString.TryGetValue("selectedItem", out selectedIndex))
                 {
                     int index = int.Parse(selectedIndex);
+                    MyReports.Suggestions.Houses[index].LineTwo = "Assets/SafetyMeasure" + MyReports.Suggestions.CalculateSafetyScale(MyReports.Suggestions.Houses[index].LineOne) + ".png";
                     DataContext = MyReports.Suggestions.Houses[index];
+
                 }
             }
         }
@@ -43,6 +45,12 @@ namespace MilbatProject
 
             // Reset selected item to null (no selection)
             MainLongListSelector.SelectedItem = null;
+        }
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MyReports.xaml", UriKind.Relative));
+
         }
     }
 }

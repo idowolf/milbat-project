@@ -15,6 +15,14 @@ namespace MilbatProject.ViewModels
             get { return _id; }
             set { _id = value; }
         }
+        private int _roomMaxQuestions;
+
+        public int RoomMaxQuestions
+        {
+            get { return _roomMaxQuestions; }
+            set { _roomMaxQuestions = value; }
+        }
+        
         
         private string _roomID;
 
@@ -32,8 +40,9 @@ namespace MilbatProject.ViewModels
             set { _roomRecords = value; }
         }
 
-        public Room(int id, string roomID)
+        public Room(int id, string roomID, int roommaxquest)
         {
+            this._roomMaxQuestions = roommaxquest;
             this._id = id;
             this._roomID = roomID;
             this._roomRecords = new List<SuggestionsViewModel>();

@@ -75,6 +75,8 @@ namespace MilbatProject.ViewModels
             }
         }
 
+        
+
         private string _lineThree;
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
@@ -103,7 +105,8 @@ namespace MilbatProject.ViewModels
             get { return _lineFour; }
             set { _lineFour = value; }
         }
-        
+
+
 
         public void ImplementValues(QuestionViewModel question)
         {

@@ -69,10 +69,6 @@ namespace MilbatProject
                     dB.LoadData(DBSender);
                 }
             }
-            if (y == 0)
-                (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = false;
-            else
-                (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
             if (y == dB.QuestionsCollection.Count() - 1)
             {
                 (ApplicationBar.Buttons[0] as ApplicationBarIconButton).IsEnabled = false;
@@ -116,6 +112,8 @@ namespace MilbatProject
                 NavigationService.Navigate(new Uri("/QuestionsPage.xaml?selectedItem=" + dB.QuestionsCollection[y - 1].ID, UriKind.Relative));
                 int x = Array.IndexOf(dB.ItemIDs, selectedIndex) + 1;
             }
+            else
+                NavigationService.Navigate(new Uri("/WizardMainPage.xaml", UriKind.Relative));
         }
 
         private void yes_Click(object sender, RoutedEventArgs e)

@@ -13,14 +13,14 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
-    <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar/>
-    </phone:PhoneApplicationPage.ApplicationBar>
     <phone:PhoneApplicationPage.Background>
         <ImageBrush Stretch="Fill"/>
     </phone:PhoneApplicationPage.Background>
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="White" FlowDirection="RightToLeft">
+    <Grid x:Name="LayoutRoot" FlowDirection="RightToLeft">
+        <Grid.Background>
+            <SolidColorBrush Color="#FFE1E1E1"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -46,17 +46,17 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-            <Image Source="Untitled-2-Recovered copy.png" Stretch="Fill"/>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+        	<Image Source="logo.png" Stretch="Fill" Height="150" Width="354"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <ScrollViewer HorizontalAlignment="Left" Height="658" Margin="12,4,0,-100" VerticalAlignment="Top" Width="456" Grid.Row="1">
-            <Grid Height="752" Width="456">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="115*"/>
-                    <ColumnDefinition Width="113*"/>
-                </Grid.ColumnDefinitions>
+        	<Grid Height="752" Width="456">
+        		<Grid.ColumnDefinitions>
+        			<ColumnDefinition Width="115*"/>
+        			<ColumnDefinition Width="113*"/>
+        		</Grid.ColumnDefinitions>
                 <Button x:Name="tzilom_dayar" Content="צילום דייר&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="0,514,5,81" Width="225" Height="157" Click="tzilom_dayar_Click"/>
                 <Button x:Name="odot" Content="אודות&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="-2,175,7,420" Width="225" Height="157" Click="odot_Click">
 

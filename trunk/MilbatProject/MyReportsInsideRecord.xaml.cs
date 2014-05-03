@@ -12,7 +12,9 @@ using MilbatProject.ViewModels;
 namespace MilbatProject
 {
     public partial class MyReportsInsideRecord : PhoneApplicationPage
-    {        
+    {
+        private string selectedHouse = "", selectedRoom = "", selectedQuestion = "";
+        private int houseIndex = 0, roomIndex = 0, questionIndex = 0;
         public MyReportsInsideRecord()
         {
             InitializeComponent();
@@ -22,8 +24,6 @@ namespace MilbatProject
         {
             if (DataContext == null)
             {
-                string selectedHouse = "", selectedRoom = "", selectedQuestion = "";
-                int houseIndex = 0, roomIndex = 0, questionIndex = 0;
                 if (NavigationContext.QueryString.TryGetValue("selectedHouse", out selectedHouse))
                     houseIndex = int.Parse(selectedHouse);
                 if (NavigationContext.QueryString.TryGetValue("selectedRoom", out selectedRoom))
@@ -32,6 +32,12 @@ namespace MilbatProject
                     questionIndex = int.Parse(selectedQuestion);
                 DataContext = MyReports.Suggestions.Houses[houseIndex].HouseRooms[roomIndex].RoomRecords[questionIndex];
             }
+        }
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MyReportsInsideRoom.xaml?selectedHouse=" + selectedHouse + "&selectedRoom=" + selectedRoom, UriKind.Relative));
+
         }
     }
 }

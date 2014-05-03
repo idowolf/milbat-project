@@ -16,5 +16,11 @@ namespace MilbatProject
         {
             InitializeComponent();
         }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+
+        }
     }
 }

@@ -27,9 +27,9 @@ namespace MilbatProject.ViewModels
         public ObservableCollection<QuestionViewModel> QuestionsCollection { get; private set; }
         public ObservableCollection<QuestionViewModel> AllQuestions { get; private set; }
         public string[] ItemIDs { get; private set; }
-        private int[] _questionsPerArea = new int[13];
+        private static int[] _questionsPerArea = new int[13];
 
-        public int[] QuestionsPerArea
+        public static int[] QuestionsPerArea
         {
             get { return _questionsPerArea; }
             set
@@ -37,7 +37,7 @@ namespace MilbatProject.ViewModels
                 if (value != _questionsPerArea)
                 {
                     _questionsPerArea = value;
-                    NotifyPropertyChanged("QuestionsCollectionCount");
+                    //NotifyPropertyChanged("QuestionsCollectionCount");
                 }
             }
         }
@@ -161,9 +161,6 @@ namespace MilbatProject.ViewModels
         {
             int pFrom = item.ID.IndexOf('.') + 1;
             int pTo = item.ID.LastIndexOf(".");
-
-            int a = int.Parse(item.ID.Substring(pFrom, pTo - pFrom)) - 1;
-
             return int.Parse(item.ID.Substring(pFrom, pTo - pFrom)) - 1;
         }
 

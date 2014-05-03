@@ -45,7 +45,7 @@ namespace MilbatProject
 
         private void hanoyot_ve_avizarim_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/StoresPage.xaml", UriKind.Relative));
         }
 
         private void takanon_Click(object sender, RoutedEventArgs e)
@@ -55,7 +55,7 @@ namespace MilbatProject
 
         private void tzilom_dayar_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/PictureResidentPage.xaml", UriKind.Relative));
         }
         //    // Set the data context of the LongListSelector control to the sample data
 

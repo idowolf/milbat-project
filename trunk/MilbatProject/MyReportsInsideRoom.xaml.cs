@@ -48,5 +48,11 @@ namespace MilbatProject
             // Reset selected item to null (no selection)
             MainLongListSelector.SelectedItem = null;
         }
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MyReportsInsideHouse.xaml?selectedItem=" +selectedHouse, UriKind.Relative));
+
+        }
     }
 }

@@ -16,5 +16,20 @@ namespace MilbatProject
         {
             InitializeComponent();
         }
+
+        private void Return_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+        }
+
+        private void Mail_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("לא ניתן כעת. \n עמנו הסליחה.");
+        }
+
+        private void Call_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("לא ניתן כעת. \n עמנו הסליחה.");
+        }
     }
 }
