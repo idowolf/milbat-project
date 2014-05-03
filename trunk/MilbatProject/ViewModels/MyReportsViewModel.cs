@@ -32,56 +32,6 @@ namespace MilbatProject.ViewModels
             set { _houses = value; }
         }
 
-        //public void AddCollectionToStructure()
-        //{
-        //    if (SuggestionsCollection.Count() == 0)
-        //    {
-
-        //    }
-        //    else 
-        //    {
-        //        int housesCount = 0;
-        //        int roomsCount = 0;
-        //        bool roomChanged = false, houseChanged = false, execflag = false;
-        //        _houses.Add(new House(housesCount, SuggestionsCollection[0].ID));
-        //        Room newRoom = new Room(roomsCount, SuggestionsCollection[0].LineOne);
-        //        //newRoom.RoomRecords.Add(SuggestionsCollection[0]);
-        //        for (int i = 0; i < SuggestionsCollection.Count(); i++)
-        //        {
-        //            if(SuggestionsCollection[i].ID == _houses[housesCount].LineOne)
-        //            {
-        //                if(SuggestionsCollection[i].LineOne == newRoom.LineOne)
-        //                    newRoom.AddNewRecord(SuggestionsCollection[i]);
-        //            }
-        //            bool flg1 = (i + 1 == SuggestionsCollection.Count()) && (roomChanged || SuggestionsCollection.Count()==1);
-        //            bool flg2 = (i + 1 == SuggestionsCollection.Count()) && (houseChanged || SuggestionsCollection.Count()==1);
-        //            if (SuggestionsCollection[i].LineOne != newRoom.LineOne || flg1)
-        //            {
-        //                roomChanged = true;
-        //                _houses[housesCount].AddNewRoom(newRoom);
-        //                newRoom = new Room(roomsCount, SuggestionsCollection[i].LineOne);
-        //                roomsCount++;
-        //                newRoom.AddNewRecord(SuggestionsCollection[i]);
-        //            }
-        //            if (SuggestionsCollection.Count() - i == 1 && SuggestionsCollection[i].LineOne != SuggestionsCollection[i - 1].LineOne)
-        //            {
-        //                roomChanged = true;
-        //                _houses[housesCount].AddNewRoom(newRoom);
-        //                newRoom = new Room(roomsCount, SuggestionsCollection[i].LineOne);
-        //                roomsCount++;
-        //                newRoom.AddNewRecord(SuggestionsCollection[i]);
-        //            }
-        //            if (SuggestionsCollection[i].ID != _houses[housesCount].LineOne || flg2)
-        //            {
-        //                houseChanged = true;
-        //                roomsCount = 0;
-        //                housesCount++;
-        //                _houses.Add(new House(housesCount, SuggestionsCollection[i].ID));
-        //            }
-        //        }
-        //    }
-        //}
-
         public void AddCollectionToStructure()
         {
             if (SuggestionsCollection.Count() != 0)
