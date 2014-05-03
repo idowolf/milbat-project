@@ -28,23 +28,23 @@
             <!--Panorama item one-->
             <phone:PanoramaItem x:Name="madregot" Header="חדר מדרגות" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
-                    <Image Source="Assets/חדר מדרגות חיצוני.jpg" Stretch="Fill"/>
+                    <Image Source="Assets/OutsideStairspic.jpg" Stretch="Fill"/>
                     <Button x:Name="OutsideStaircase" Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Foreground="White" BorderBrush="White" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
-            <phone:PanoramaItem x:Name="yard" Header="חצר" FlowDirection="RightToLeft" Foreground="Black">
+            <phone:PanoramaItem x:Name="yard" Header="Yardpic" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
-                    <Image Source="Assets/חצר.jpg" Stretch="Fill"/>
+                    <Image Source="Assets/Yardpic.jpg" Stretch="Fill"/>
                     <Button x:Name="Yard" Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
             <phone:PanoramaItem x:Name="elevator" Header="מעלית" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
-                    <Image Source="Assets/מעלית.jpg" Stretch="Fill"/>
+                    <Image Source="Assets/lifty.jpg" Stretch="Fill"/>
                     <Button x:Name="Lift" Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Button_Click">
                     </Button>
                 </Grid>

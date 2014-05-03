@@ -16,6 +16,9 @@
     <File>Assets\AppBar\next.png</File>
     <File>Assets\AppBar\questionmark.png</File>
     <File>Assets\AppBar\save.png</File>
+    <File>Assets\SquareTile150x150.png</File>
+    <File>Assets\SquareTile71x71.png</File>
+    <File>Assets\StoreLogo.png</File>
     <File>Assets\BadgeLogo.png</File>
     <File>Assets\camera.png</File>
     <File>Assets\checklist 2.png</File>
@@ -27,7 +30,6 @@
     <File>Assets\I.png</File>
     <File>Assets\Image1.png</File>
     <File>Assets\in home.png</File>
-    <File>Assets\Logo.png</File>
     <File>Assets\patish.png</File>
     <File>Assets\question.png</File>
     <File>Assets\reports.png</File>
@@ -36,10 +38,6 @@
     <File>Assets\SafetyMeasure25.png</File>
     <File>Assets\SafetyMeasure50.png</File>
     <File>Assets\SafetyMeasure75.png</File>
-    <File>Assets\SplashScreen.png</File>
-    <File>Assets\SquareTile150x150.png</File>
-    <File>Assets\SquareTile71x71.png</File>
-    <File>Assets\StoreLogo.png</File>
     <File>Assets\takin helkit.png</File>
     <File>Assets\Untitled-2-Recovered copy.png</File>
     <File>Assets\WideLogo.png</File>
@@ -48,6 +46,7 @@
     <File>Assets\Tiles\FlipCycleTileSmall.png</File>
     <File>Assets\Tiles\IconicTileMediumLarge.png</File>
     <File>Assets\Tiles\IconicTileSmall.png</File>
+    <File>Assets\Logo.png</File>
     <File>Assets\WizardAssets\Questions\01.01.01.jpg</File>
     <File>Assets\WizardAssets\Questions\01.01.02.jpg</File>
     <File>Assets\WizardAssets\Questions\01.01.03.jpg</File>
@@ -232,21 +231,21 @@
     <File>Assets\WizardAssets\Suggestions\02.12.03.jpg</File>
     <File>Assets\WizardAssets\Suggestions\02.13.01.jpg</File>
     <File>Assets\WizardAssets\Suggestions\02.13.02.jpg</File>
-    <File>Assets\דלת כניסה.jpg</File>
-    <File>Assets\חדר אמבטיה.jpg</File>
-    <File>Assets\חדר מדרגות חיצוני.jpg</File>
-    <File>Assets\חדר מקלחת.jpg</File>
-    <File>Assets\חדר שינה.jpg</File>
-    <File>Assets\חצר.jpg</File>
-    <File>Assets\כללי .png</File>
-    <File>Assets\כללי בבית.jpg</File>
-    <File>Assets\כללי.jpg</File>
-    <File>Assets\מדרגות בתוך הבית.jpg</File>
-    <File>Assets\מטבח.jpg</File>
-    <File>Assets\מעלית.jpg</File>
-    <File>Assets\סלון.jpg</File>
-    <File>Assets\פרוזדורים.jpg</File>
-    <File>Assets\שירותים.jpg</File>
+    <File>Assets\EntranceDoorpic.jpg</File>
+    <File>Assets\Bathpic.jpg</File>
+    <File>Assets\OutsideStairspic.jpg</File>
+    <File>Assets\ShowerroomImage.jpg</File>
+    <File>Assets\Bedroompic.jpg</File>
+    <File>Assets\Yardpic.jpg</File>
+    <File>Assets\Miscpic.png</File>
+    <File>Assets\Miscpicc.jpg</File>
+    <File>Assets\Miscpiccc.jpg</File>
+    <File>Assets\outsidestaircasepic.jpg</File>
+    <File>Assets\kitchennn.jpg</File>
+    <File>Assets\lifty.jpg</File>
+    <File>Assets\livingroompic.jpg</File>
+    <File>Assets\prozdores.jpg</File>
+    <File>Assets\bathroompic.jpg</File>
     <File>logo.png</File>
     <File>MilbatDatabase.xml</File>
     <File>test.xml</File>
