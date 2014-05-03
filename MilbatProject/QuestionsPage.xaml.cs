@@ -132,6 +132,8 @@ namespace MilbatProject
 
         private void Finish_Click(object sender, EventArgs e)
         {
+            if (questionResult == 0)
+                App.ResultsViewModel.AddNewQuestion(dB.QuestionsCollection[y].ID);
             App.ResultsViewModel.InsertNewRoom();
             App.ResultsViewModel = null;
             MessageBox.Show("התשובות נקלטו בהצלחה!");

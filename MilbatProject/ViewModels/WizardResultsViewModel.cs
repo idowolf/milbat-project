@@ -49,21 +49,21 @@ namespace MilbatProject.ViewModels
                 )));
         }
         
-        public bool IsRoomExist(XDocument doc, string HouseName, string RoomName)
+        public bool IsRoomExist(XDocument doc)
         {
             var RoomSelection = from room in doc.Descendants("room")
-                       where (string)room.Parent.Attribute("HouseID") == HouseName
-                       && (string)room.Attribute("RoomID") == RoomName
+                       where (string)room.Parent.Attribute("HouseID").Value == _houseID
+                       && (string)room.Attribute("RoomID").Value == _roomName
                        select room;
             if (RoomSelection.ToList().Count > 0)
                 return true;
             return false;
         }
 
-        public bool IsHouseExist(XDocument doc, string HouseName)
+        public bool IsHouseExist(XDocument doc)
         {
-            var HouseSelection = from house in doc.Descendants("room")
-                                where (string)house.Attribute("HouseID") == HouseName
+            var HouseSelection = from house in doc.Descendants("house")
+                                where (string)house.Attribute("HouseID").Value == _houseID
                                 select house;
             if (HouseSelection.ToList().Count > 0)
                 return true;
@@ -72,14 +72,14 @@ namespace MilbatProject.ViewModels
 
         public XDocument AddQueryToXML(XDocument doc)
         {
-            if(IsHouseExist(doc, _houseID))
+            if(IsHouseExist(doc))
             {
                 //Insert to existing room in existing house
-                if(IsRoomExist(doc, _houseID, _roomName))
+                if(IsRoomExist(doc))
                 {
-                    foreach(XElement room in doc.Elements("room"))
+                    foreach (XElement room in doc.Descendants().Elements("room"))
                     {
-                        if ((string)room.Attribute("RoomID") == _roomName)
+                        if ((string)room.Attribute("RoomID").Value == _roomName)
                             room.Add(_questions);
                     }
                     return doc;
@@ -88,9 +88,9 @@ namespace MilbatProject.ViewModels
                 XElement elem = new XElement("room", _questions,
                     new XAttribute("RoomID", _roomName)
                     );
-                foreach(XElement house in doc.Elements("house"))
+                foreach(XElement house in doc.Descendants().Elements("house"))
                 {
-                    if ((string)house.Attribute("HouseID") == _houseID)
+                    if ((string)house.Attribute("HouseID").Value== _houseID)
                         house.Add(elem);
                 }
                 return doc;
@@ -110,8 +110,7 @@ namespace MilbatProject.ViewModels
             XDocument doc = null;
             if(_houseID!="")
             { 
-                InsertNewDataSet(doc); //Open and save the file, no changes made.
-                ReadIsoStream(doc); //Display file again.
+                InsertNewDataSet(doc);
             }
         }
 
