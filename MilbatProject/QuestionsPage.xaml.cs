@@ -16,8 +16,9 @@ namespace MilbatProject
     public partial class QuestionsPage : PhoneApplicationPage
     {
         private static WizardViewModel dB = null;
-        private static string dBSender;
+        private static string dBSender, imagePath;
         private int questionResult;
+
 
         public static string DBSender
         {
@@ -83,6 +84,7 @@ namespace MilbatProject
                 (ApplicationBar.Buttons[2] as ApplicationBarIconButton).IsEnabled = false;
             }
             DataContext = dB.QuestionsCollection[y];
+            imagePath = "Assets/WizardAssets/Questions/" + dB.QuestionsCollection[y].ID + ".jpg";
         }
 
 

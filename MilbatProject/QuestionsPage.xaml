@@ -62,7 +62,7 @@
         <Button x:Name="no" VerticalAlignment="Center" Margin="18,28,0,28" Grid.Row="2" Height="135" Grid.Column="4" Grid.ColumnSpan="2" Background="White" BorderBrush="#FFFC5207" Width="135" Foreground="Black" Click="no_Click">
             <Image Source="Assets/1398731016_DeleteRed.png" Stretch="Fill"/>
         </Button>
-        <Image Source="1.jpg" Stretch="Fill" Grid.ColumnSpan="5" Grid.Row="3" Grid.Column="1"/>
+        <Image Source="{Binding imagePath}" Stretch="Fill" Grid.ColumnSpan="5" Grid.Row="3" Grid.Column="1"/>
         <Image Grid.ColumnSpan="6" Grid.Row="3"/>
         <Button x:Name="takin_helkit" VerticalAlignment="Center" Margin="0,28" Grid.Row="2" Height="135" Grid.Column="3" BorderBrush="#FFFC5207" Background="White" Width="135" Foreground="Black" Click="takin_helkit_Click">
             <Image Source="Assets/takin helkit.png" Stretch="Fill"/>
