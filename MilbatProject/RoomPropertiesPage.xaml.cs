@@ -43,5 +43,37 @@ namespace MilbatProject
         {
             NavigationService.Navigate(new Uri("/Wizard" + selectedIndex + "HousePage.xaml", UriKind.Relative));
         }
+
+        private void name_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (name.Text.Equals("הקלד את שם הדייר כאן...", StringComparison.OrdinalIgnoreCase))
+            {
+                name.Text = string.Empty;
+            }  
+        }
+
+        private void name_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(name.Text))
+            {
+                name.Text = "הקלד את שם הדייר כאן...";
+            }
+        }
+
+        private void room_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (room.Text.Equals("הקלד את שם החדר כאן...", StringComparison.OrdinalIgnoreCase))
+            {
+                room.Text = string.Empty;
+            }  
+        }
+
+        private void room_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(room.Text))
+            {
+                room.Text = "הקלד את שם החדר כאן...";
+            }
+        }
     }
 }
