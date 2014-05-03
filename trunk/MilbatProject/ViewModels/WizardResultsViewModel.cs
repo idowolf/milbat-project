@@ -2,9 +2,6 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using MilbatProject.Resources;
-using System.Xml.Linq;
-using System.Text;
-using System.Linq;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Input;
@@ -12,6 +9,10 @@ using MilbatProject;
 using System.IO.IsolatedStorage;
 using System.IO;
 using System.Xml;
+using System.Xml.Linq;
+using System.Text;
+using System.Linq;
+
 
 namespace MilbatProject.ViewModels
 {
@@ -144,6 +145,21 @@ namespace MilbatProject.ViewModels
                 }
             }
         }
+
+        public static void ForceNewFile()
+        {
+            XDocument doc = null;
+            using (IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                    using (IsolatedStorageFileStream isoStream = new IsolatedStorageFileStream("WizardResults.xml", FileMode.Create, isoStore))
+                    {
+                        XDeclaration dec = new XDeclaration("1.0", "utf-8", "yes");
+                        doc = new XDocument(dec, new XElement("houses"));
+                        doc.Save(isoStream);
+                    }
+            }
+        }
+
         public void ReadIsoStream(XDocument doc)
         {
             using (IsolatedStorageFile isoStory = IsolatedStorageFile.GetUserStoreForApplication())

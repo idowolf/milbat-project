@@ -18,11 +18,14 @@ namespace MilbatProject.ViewModels
         public WizardViewModel()
         {
             this.QuestionsCollection = new ObservableCollection<QuestionViewModel>();
+            this.AllQuestions = new ObservableCollection<QuestionViewModel>();
         }
+
         /// <summary>
         /// A collection for ItemViewModel objects.
         /// </summary>
         public ObservableCollection<QuestionViewModel> QuestionsCollection { get; private set; }
+        public ObservableCollection<QuestionViewModel> AllQuestions { get; private set; }
         public string[] ItemIDs { get; private set; }
         private int[] _questionsPerArea = new int[13];
 
@@ -98,6 +101,29 @@ namespace MilbatProject.ViewModels
             // Sample data; replace with real data
             var data = from item in doc.Descendants("record")
                        where (string)item.Parent.Attribute("Name")==RoomName
+                       select new QuestionViewModel
+                       {	//other tags within the xml
+                           ID = item.Element("ID").Value.ToString(),
+                           LineOne = item.Element("subject").Value.ToString(),
+                           LineTwo = item.Element("question").Value.ToString(),
+                           LineThree = item.Element("suggestion").Value.ToString(),
+                       };
+            GetQuestionsPerArea();
+            List<QuestionViewModel> lst = data.ToList();
+            ItemIDs = new string[lst.Count()];
+            for (int i = 0; i < (lst.Count()); i++)
+            {
+                lst[i].QuestionTitle = SetQuestionTitle(lst[i]);
+                this.QuestionsCollection.Add(lst[i]);
+                this.ItemIDs[i] = lst[i].ID;
+            }
+            this.IsDataLoaded = true;
+        }
+
+        public void LoadData()
+        {
+            // Sample data; replace with real data
+            var data = from item in doc.Descendants("record")
                        select new QuestionViewModel
                        {	//other tags within the xml
                            ID = item.Element("ID").Value.ToString(),
