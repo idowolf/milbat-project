@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\wp-results.xsl'?>
-<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsPhone" PUBLISHER_DISPLAY_NAME="Ido" APP_NAME="19f3d769-32fb-4fe7-8727-298191f8d4ea" APP_VERSION="1.0.0.0" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1037" VALIDATION_TYPE="UI" ReportGenerationTime="04/05/2014 02:11:25" ID="f4361cc813bd1603f689782bbef8bbf1">
+<REPORT OVERALL_RESULT="PASS" VERSION="3.3" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="X64" SecureBoot="FALSE" APP_TYPE="WindowsPhone" PUBLISHER_DISPLAY_NAME="Ido" APP_NAME="19f3d769-32fb-4fe7-8727-298191f8d4ea" APP_VERSION="1.0.0.0" OSVERSION="6.3.9600.0" OS="Microsoft Windows 8.1 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1037" VALIDATION_TYPE="UI" ReportGenerationTime="04/05/2014 02:42:14" ID="00aab36889e32b31ce81bea3aad0c25d">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
     <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
@@ -14,41 +14,41 @@
     <REQUIREMENT NUMBER="10" TITLE="Crashes and hangs test" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience." />
     <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
     <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
-      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.51ms">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.43ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.68ms">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:03s.81ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
     <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
-      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:03s.73ms">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:03s.69ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:02s.02ms">
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.95ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
-      <TEST INDEX="72" NAME="Supported APIs" DESCRIPTION="Windows Phone App must only use supported platform APIs." EXECUTIONTIME="00h:00m:03s.15ms">
+      <TEST INDEX="72" NAME="Supported APIs" DESCRIPTION="Windows Phone App must only use supported platform APIs." EXECUTIONTIME="00h:00m:03s.07ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications." />
     <REQUIREMENT NUMBER="19" TITLE="App manifest resources test" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
-      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:04s.52ms">
+      <TEST INDEX="61" NAME="Branding validation" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:03s.86ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
-      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.95ms">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.82ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
@@ -58,11 +58,11 @@
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." />
     <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources." />
     <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
-      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:02s.42ms">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:02s.09ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="76" NAME="Package validation" DESCRIPTION="Silverlight apps should pass XAP package validation." EXECUTIONTIME="00h:00m:03s.76ms">
+      <TEST INDEX="76" NAME="Package validation" DESCRIPTION="Silverlight apps should pass XAP package validation." EXECUTIONTIME="00h:00m:03s.47ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
@@ -73,7 +73,7 @@
   <APPLICATIONS />
   <DEPENDENCY_INFORMATION>
     <AitStaticAnalysis Type="Template">
-      <AitFile ErrorCode="0" Name="MilbatProject.dll" Id="0000d968280f35cd1618d7e434a90e623296cfa408ac">
+      <AitFile ErrorCode="0" Name="MilbatProject.dll" Id="00002d6ca032f01dbdca3617b2177c4ab9fd36532673">
         <AitCategory Id="ApiStatic">
           <AitFeature Name="mscoree.dll!_CorDllMain" />
         </AitCategory>
@@ -180,12 +180,16 @@
           <AitFeature Name="System.RuntimeTypeHandle" />
           <AitFeature Name="System.String" />
           <AitFeature Name="System.String.Concat" />
+          <AitFeature Name="System.String.Empty" />
+          <AitFeature Name="System.String.Equals" />
           <AitFeature Name="System.String.IndexOf" />
+          <AitFeature Name="System.String.IsNullOrEmpty" />
           <AitFeature Name="System.String.LastIndexOf" />
           <AitFeature Name="System.String.Substring" />
           <AitFeature Name="System.String.get_Length" />
           <AitFeature Name="System.String.op_Equality" />
           <AitFeature Name="System.String.op_Inequality" />
+          <AitFeature Name="System.StringComparison" />
           <AitFeature Name="System.Threading.Interlocked" />
           <AitFeature Name="System.Threading.Interlocked.CompareExchange" />
           <AitFeature Name="System.Type" />
@@ -225,6 +229,7 @@
           <AitFeature Name="System.Windows.Controls.TextBlock" />
           <AitFeature Name="System.Windows.Controls.TextBox" />
           <AitFeature Name="System.Windows.Controls.TextBox.get_Text" />
+          <AitFeature Name="System.Windows.Controls.TextBox.set_Text" />
           <AitFeature Name="System.Windows.FlowDirection" />
           <AitFeature Name="System.Windows.FrameworkElement" />
           <AitFeature Name="System.Windows.FrameworkElement.FindName" />

@@ -35,7 +35,7 @@
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
-            <phone:PanoramaItem x:Name="yard" Header="Yardpic" FlowDirection="RightToLeft" Foreground="Black">
+            <phone:PanoramaItem x:Name="yard" Header="חצר" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/Yardpic.jpg" Stretch="Fill"/>
                     <Button x:Name="Yard" Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Button_Click">
