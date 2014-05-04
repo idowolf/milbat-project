@@ -652,6 +652,10 @@
     <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\AppBar\save.png">
       <PackagePath>Assets\AppBar\save.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Assets\SquareTile150x150.png">
       <PackagePath>Assets\SquareTile150x150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
