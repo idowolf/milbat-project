@@ -47,12 +47,17 @@ namespace MilbatProject.ViewModels
 
             for (int i = 0; i < _houses[housePointer].HouseRooms.Count(); i++)
             {
-                maxCount += _houses[housePointer].HouseRooms[i].RoomRecords.Count();
 
                 for (int k = 0; k < _houses[housePointer].HouseRooms[i].RoomRecords.Count(); k++)
                 {
                     suggestionCount++;
                 }
+            }
+            for (int i = 0; i < _houses[housePointer].HouseRooms.Count(); i++)
+            {
+                                //maxCount += _houses[housePointer].HouseRooms[i].RoomRecords.Count();
+                maxCount += GetRoomMaxCount(questionTitles[i]);
+
             }
 
             safetyScale = (maxCount - suggestionCount) / (double)maxCount * 100;
@@ -72,7 +77,7 @@ namespace MilbatProject.ViewModels
 
         public int GetRoomMaxCount(string title)
         {
-            return int.Parse(title.Substring(title.IndexOf("מתוך ") + 5));
+            return int.Parse(title.Substring(title.IndexOf("מתוך ") + 4));
         }
 
         public int WheresMyHouse(string houseName)
@@ -185,6 +190,7 @@ namespace MilbatProject.ViewModels
         /// </summary>
         public void LoadData(WizardViewModel DB)
         {
+            WizardResultsViewModel.StaticCreateNewFileIfNecessary();
             using (IsolatedStorageFile isoStory = IsolatedStorageFile.GetUserStoreForApplication())
             {
                 if(isoStory.FileExists("WizardResults.xml"))

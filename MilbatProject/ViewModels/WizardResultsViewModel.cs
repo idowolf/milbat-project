@@ -146,6 +146,23 @@ namespace MilbatProject.ViewModels
             }
         }
 
+        public static void StaticCreateNewFileIfNecessary()
+        {
+            XDocument doc = null;
+            using (IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                if (!isoStore.FileExists("WizardResults.xml"))
+                {
+                    using (IsolatedStorageFileStream isoStream = new IsolatedStorageFileStream("WizardResults.xml", FileMode.Create, isoStore))
+                    {
+                        XDeclaration dec = new XDeclaration("1.0", "utf-8", "yes");
+                        doc = new XDocument(dec, new XElement("houses"));
+                        doc.Save(isoStream);
+                    }
+                }
+            }
+        }
+
         public static void ForceNewFile()
         {
             XDocument doc = null;
@@ -153,11 +170,31 @@ namespace MilbatProject.ViewModels
             {
                     using (IsolatedStorageFileStream isoStream = new IsolatedStorageFileStream("WizardResults.xml", FileMode.Create, isoStore))
                     {
+                        
                         XDeclaration dec = new XDeclaration("1.0", "utf-8", "yes");
                         doc = new XDocument(dec, new XElement("houses"));
                         doc.Save(isoStream);
                     }
             }
+        }
+
+        public static string GetUserReports()
+        {
+            XDocument doc = null;
+            string res = "";
+            StaticCreateNewFileIfNecessary();
+            using (IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication())
+            {
+                using (IsolatedStorageFileStream isoStream = new IsolatedStorageFileStream("WizardResults.xml", FileMode.Open, isoStore))
+                {
+                    
+                    doc = XDocument.Load(isoStream, LoadOptions.PreserveWhitespace);
+                    res += doc.ToString();
+                    isoStream.Position = 0;
+                    doc.Save(isoStream);
+                }
+            }
+            return res;
         }
 
         public void ReadIsoStream(XDocument doc)
