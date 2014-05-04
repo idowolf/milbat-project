@@ -43,14 +43,14 @@
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
-            <phone:PanoramaItem x:Name="miklahat_room" Header="Showerroom" FlowDirection="RightToLeft" Foreground="Black">
+            <phone:PanoramaItem x:Name="miklahat_room" Header="חדר מקלחת" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
-                    <Image Source="/Assets/Showerroom.jpg" Stretch="Fill"/>
+                    <Image Source="/Assets/ShowerroomImage.jpg" Stretch="Fill"/>
                     <Button x:Name="Shower" Content="החל בסריקה" Margin="0,300,182,0" Foreground="White" BorderBrush="White" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
-            <phone:PanoramaItem x:Name="sleeping_room" Header="Bedroompic" FlowDirection="RightToLeft" Foreground="Black">
+            <phone:PanoramaItem x:Name="sleeping_room" Header="חדר שינה" FlowDirection="RightToLeft" Foreground="Black">
                 <Grid>
                     <Image Source="Assets/Bedroompic.jpg" Stretch="Fill"/>
                     <Button x:Name="Bedroom" Content="החל בסריקה" Margin="0,300,182,0" Foreground="White" BorderBrush="White" Click="Button_Click">
