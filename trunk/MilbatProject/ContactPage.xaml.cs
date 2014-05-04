@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Microsoft.Phone.Tasks;
+using MilbatProject.ViewModels;
 
 namespace MilbatProject
 {
@@ -28,7 +29,15 @@ namespace MilbatProject
             EmailComposeTask emailComposeTask = new EmailComposeTask();
             emailComposeTask.To = "milbat@netvision.net.il";
             emailComposeTask.Subject = "הודעה שנשלחה מתוך 'משמרת הזהב'";
-            emailComposeTask.Body = "משתמש יקר, \nאנא צרף הודעתך מטה:";
+            emailComposeTask.Body = "";
+            emailComposeTask.Body += "משתמש יקר, \nאנא צרף הודעתך מטה:\n\n\n";
+            MessageBoxResult m = MessageBox.Show("האם ברצונך לצרף את הדוחות שלך לצורך בקרה ושיפור היישומון?", "בקשה לשליחת הנתונים", MessageBoxButton.OKCancel);
+            if (m == MessageBoxResult.OK)
+            {
+                emailComposeTask.Body += "דוח המשתמש:\n";
+                emailComposeTask.Body += "דרוש שיפור לשאלות במספרים הסידוריים הבאים:\n";
+                emailComposeTask.Body += WizardResultsViewModel.GetUserReports();
+            }
             emailComposeTask.Show();
         }
 
@@ -38,7 +47,6 @@ namespace MilbatProject
 
             phoneCallTask.PhoneNumber = "0722230007";
             phoneCallTask.DisplayName = "עמותת מילבת";
-
             phoneCallTask.Show();
         }
     }

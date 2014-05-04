@@ -44,8 +44,8 @@ namespace MilbatProject
 
         private void ForceNewFile_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("האם אתה בטוח שברצונך למחוק את הדוחות שלך?","אזהרה!",MessageBoxButton.OKCancel);
-            if (MessageBoxResult.OK.ToString() == "OK")
+            MessageBoxResult m = MessageBox.Show("האם אתה בטוח שברצונך למחוק את הדוחות שלך?","אזהרה!",MessageBoxButton.OKCancel);
+            if (m == MessageBoxResult.OK)
             {
                 WizardResultsViewModel.ForceNewFile();
                 NavigationService.Navigate(new Uri("/WizardMainPage.xaml", UriKind.Relative));
