@@ -49,3 +49,4 @@ C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\o
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\SplashPage.g.cs
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\PictureResidentPage.g.cs
 C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\obj\Debug\StoresPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2013\Projects\MilbatProject\MilbatProject\Bin\Debug\Assets\StoreLogo.png

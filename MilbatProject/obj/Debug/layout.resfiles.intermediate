@@ -13,9 +13,13 @@ Assets\AppBar\questionmark.png
 Assets\AppBar\save.png
 Assets\ApplicationIcon.png
 Assets\BadgeLogo.png
+Assets\Bathpic.jpg
+Assets\bathroompic.jpg
+Assets\Bedroompic.jpg
 Assets\camera.png
 Assets\checklist 2.png
 Assets\email.png
+Assets\EntranceDoorpic.jpg
 Assets\FlipCycleTileLarge.png
 Assets\FlipCycleTileMedium.png
 Assets\FlipCycleTileSmall.png
@@ -24,8 +28,17 @@ Assets\home1.png
 Assets\I.png
 Assets\Image1.png
 Assets\in home.png
+Assets\kitchennn.jpg
+Assets\lifty.jpg
+Assets\livingroompic.jpg
 Assets\Logo.png
+Assets\Miscpic.png
+Assets\Miscpicc.jpg
+Assets\Miscpiccc.jpg
+Assets\outsidestaircasepic.jpg
+Assets\OutsideStairspic.jpg
 Assets\patish.png
+Assets\prozdores.jpg
 Assets\question.png
 Assets\reports.png
 Assets\SafetyMeasure0.png
@@ -33,6 +46,7 @@ Assets\SafetyMeasure100.png
 Assets\SafetyMeasure25.png
 Assets\SafetyMeasure50.png
 Assets\SafetyMeasure75.png
+Assets\ShowerroomImage.jpg
 Assets\SplashScreen.png
 Assets\SquareTile150x150.png
 Assets\SquareTile71x71.png
@@ -229,21 +243,7 @@ Assets\WizardAssets\Suggestions\02.12.02.jpg
 Assets\WizardAssets\Suggestions\02.12.03.jpg
 Assets\WizardAssets\Suggestions\02.13.01.jpg
 Assets\WizardAssets\Suggestions\02.13.02.jpg
-Assets\דלת כניסה.jpg
-Assets\חדר אמבטיה.jpg
-Assets\חדר מדרגות חיצוני.jpg
-Assets\חדר מקלחת.jpg
-Assets\חדר שינה.jpg
-Assets\חצר.jpg
-Assets\כללי .png
-Assets\כללי בבית.jpg
-Assets\כללי.jpg
-Assets\מדרגות בתוך הבית.jpg
-Assets\מטבח.jpg
-Assets\מעלית.jpg
-Assets\סלון.jpg
-Assets\פרוזדורים.jpg
-Assets\שירותים.jpg
+Assets\Yardpic.jpg
 logo.png
 MilbatDatabase.xml
 test.xml

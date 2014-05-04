@@ -47,7 +47,8 @@ namespace MilbatProject.ViewModels
 
             for (int i = 0; i < _houses[housePointer].HouseRooms.Count(); i++)
             {
-                maxCount += _houses[housePointer].HouseRooms[i].RoomMaxQuestions;
+                maxCount += _houses[housePointer].HouseRooms[i].RoomRecords.Count();
+
                 for (int k = 0; k < _houses[housePointer].HouseRooms[i].RoomRecords.Count(); k++)
                 {
                     suggestionCount++;
@@ -55,7 +56,7 @@ namespace MilbatProject.ViewModels
             }
 
             safetyScale = (maxCount - suggestionCount) / (double)maxCount * 100;
-            if (safetyScale >= 0 && safetyScale < 25)
+            if (safetyScale < 25)
                 safetyScale = 0;
             else if (safetyScale >= 25 && safetyScale < 50)
                 safetyScale = 25;
@@ -94,20 +95,26 @@ namespace MilbatProject.ViewModels
                 _houses[0].AddNewRoom(new Room(roomCount, currentRoomID,GetRoomMaxCount(questionTitles[0])));
                 for (int i = 0; i < SuggestionsCollection.Count(); i++)
                 {
-                    //Add new house if count went up
-                    if(_houses.Count() - 1 != houseCount)
+                    if (i > 0)
                     {
-                        roomCount = 0;
-                        currentHouseID = SuggestionsCollection[i].ID;
-                        _houses.Add(new House(houseCount, currentHouseID));
+                        if (_houses.Count() - 1 != houseCount)
+                        {
+                            roomCount = 0;
+                            currentHouseID = SuggestionsCollection[i].ID;
+                            _houses.Add(new House(houseCount, currentHouseID));
+                        }
                     }
-                    
                     //Add new room if count went up
-                    if(_houses[houseCount].HouseRooms.Count() - 1 != roomCount)
+                    if ( i > 0)
+                    { 
+                        if(_houses[houseCount].HouseRooms.Count() - 1 != roomCount)
                     {
                         currentRoomID = SuggestionsCollection[i].LineOne;
-                        _houses[houseCount].AddNewRoom(new Room(roomCount, currentRoomID,GetRoomMaxCount(questionTitles[0])));
+                        _houses[houseCount].AddNewRoom(new Room(roomCount, currentRoomID, GetRoomMaxCount(questionTitles[roomCount])));
                     }
+                    }
+
+                    //Add new house if count went up
 
                     if(currentHouseID != SuggestionsCollection[i].ID)
                     {
@@ -124,6 +131,8 @@ namespace MilbatProject.ViewModels
                         _houses[houseCount].HouseRooms[roomCount].AddNewRecord(SuggestionsCollection[i]);
                     }
                 }
+                int ab = roomCount;
+                    //_houses[houseCount].AddNewRoom(new Room(roomCount, currentRoomID, GetRoomMaxCount(questionTitles[roomCount])));
             }
         }
         
@@ -194,8 +203,8 @@ namespace MilbatProject.ViewModels
                     List<SuggestionsViewModel> lst = data.ToList();
                     for (int i = 0; i < (lst.Count()); i++)
                     {
-                        questionTitles.Add(DB.QuestionsCollection[i].QuestionTitle);
                         string suggestionID = lst[i].LineTwo;
+                        questionTitles.Add(DB.QuestionsCollection[(Array.IndexOf(DB.ItemIDs,suggestionID))].QuestionTitle);
                         lst[i].LineTwo = DB.QuestionsCollection[Array.IndexOf(DB.ItemIDs, suggestionID)].LineOne;
                         lst[i].LineThree = DB.QuestionsCollection[Array.IndexOf(DB.ItemIDs, suggestionID)].LineTwo;
                         lst[i].LineFour = DB.QuestionsCollection[Array.IndexOf(DB.ItemIDs, suggestionID)].LineThree;
