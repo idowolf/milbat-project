@@ -172,6 +172,7 @@ namespace MilbatProject
         {
             if (phoneApplicationInitialized)
                 return;
+
             // Create the frame but don't set it as RootVisual yet; this allows the splash
             // screen to remain active until the application is ready to render.
             RootFrame = new PhoneApplicationFrame();
@@ -182,9 +183,6 @@ namespace MilbatProject
 
             // Handle reset requests for clearing the backstack
             RootFrame.Navigated += CheckForResetNavigation;
-
-            // Handle contract activation such as a file open or save picker
-            PhoneApplicationService.Current.ContractActivated += Application_ContractActivated;
 
             // Ensure we don't initialize again
             phoneApplicationInitialized = true;
