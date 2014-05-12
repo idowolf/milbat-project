@@ -86,3 +86,6 @@ c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\B
 c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\Bin\Debug\MilbatProject_Debug_AnyCPU.xap
 C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Debug\MilbatProject.pdb
 c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\obj\Debug\XapCacheFile.xml
+C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Debug\SettingsPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Debug\PhotoGallery.g.cs
+C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Debug\StoresMainPage.g.cs

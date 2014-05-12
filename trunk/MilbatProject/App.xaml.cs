@@ -28,7 +28,22 @@ namespace MilbatProject
             }
             set { allquestionsviewModel = value; }
         }
-        
+
+        private static DailyTipViewModel tips = null;
+
+        public static DailyTipViewModel Tips
+        {
+            get
+            {
+                // Delay creation of the view model until necessary
+                if (tips == null)
+                    tips = new DailyTipViewModel();
+
+                return tips;
+            }
+            set { tips = value; }
+        }
+
 
         /// <summary>
         /// A static ViewModel used by the views to bind against.

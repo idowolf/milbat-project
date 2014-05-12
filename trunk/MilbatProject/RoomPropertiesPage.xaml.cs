@@ -7,6 +7,8 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using MilbatProject.Resources;
+using MilbatProject.ViewModels;
 
 namespace MilbatProject
 {
@@ -28,7 +30,7 @@ namespace MilbatProject
         }
         private void Next_Click(object sender, EventArgs e)
         {
-            if(name.Text!="" && room.Text!="")
+            if(DataValidation(name.Text, AppResources.ResidentEmpty) && DataValidation(room.Text,AppResources.RoomEmpty))
             { 
                 App.ResultsViewModel.HouseID = name.Text;
                 SelectedHouseID = name.Text;
@@ -74,6 +76,16 @@ namespace MilbatProject
             {
                 room.Text = "הקלד את שם החדר כאן...";
             }
+        }
+
+        public static bool DataValidation(string toTest, string EmptyString)
+        {
+            return toTest != EmptyString && toTest != "";
+        }
+        private void SuperG(object sender, EventArgs e)
+        {
+            string msg = " כדי שתוכל לבדוק מספר בתים, וכדי שתדע לזהות את החדר שבדקת, אנא מלא את הפרטים בתיבות.";
+            MainPageViewModel.RescueMe(LayoutRoot, TitlePanel, ContentPanel, msg);
         }
     }
 }

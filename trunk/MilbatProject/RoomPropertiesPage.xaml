@@ -16,7 +16,7 @@
         <shell:ApplicationBar>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/save.png" Text="שמור,המשך" Click="Next_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="Back_Click"/>
-
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/S.png" Text="עזרה" Click="SuperG"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
@@ -28,10 +28,12 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
+        <Grid x:Name="TitlePanel">
         <StackPanel Grid.Row="0" Margin="12,17,0,28" FlowDirection="RightToLeft">
             <TextBlock Text="שם הדייר וחדר" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FlowDirection="RightToLeft" Foreground="#FFFC5207"/>
         </StackPanel>
-
+        </Grid>
+        
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" FlowDirection="RightToLeft">
             <Grid.RowDefinitions>

@@ -140,6 +140,7 @@ namespace MilbatProject.ViewModels
                     {
                         XDeclaration dec = new XDeclaration("1.0", "utf-8", "yes");
                         doc = new XDocument(dec, new XElement("houses"));
+                        isoStream.Position = 0;
                         doc.Save(isoStream);
                     }
                 }
@@ -157,6 +158,7 @@ namespace MilbatProject.ViewModels
                     {
                         XDeclaration dec = new XDeclaration("1.0", "utf-8", "yes");
                         doc = new XDocument(dec, new XElement("houses"));
+                        isoStream.Position = 0;
                         doc.Save(isoStream);
                     }
                 }
@@ -173,6 +175,7 @@ namespace MilbatProject.ViewModels
                         
                         XDeclaration dec = new XDeclaration("1.0", "utf-8", "yes");
                         doc = new XDocument(dec, new XElement("houses"));
+                        isoStream.Position = 0;
                         doc.Save(isoStream);
                     }
             }
@@ -206,7 +209,7 @@ namespace MilbatProject.ViewModels
                     using (XmlReader reader = XmlReader.Create(isoStream))
                     {
                         XDocument xml = XDocument.Load(reader, LoadOptions.PreserveWhitespace);
-
+                        isoStream.Position = 0;
                         MessageBox.Show(xml.ToString());
                     }
                 }

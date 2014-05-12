@@ -146,5 +146,11 @@ namespace MilbatProject
             MessageBox.Show("התשובות נקלטו בהצלחה!");
             NavigationService.Navigate(new Uri("/WizardMainPage.xaml", UriKind.Relative));
         }
+
+        private void SuperG(object sender, EventArgs e)
+        {
+            string msg = "במסכים הבאים תוצג בפניך סדרת שאלות והסברים מה עליך לבדוק בחדר. בהתאם לממצאי הבדיקה שלך, עליך לסמן בתיבה המתאימה: תקין, תקין בצורה חלקית או לא תקין . אל תשכח לסמן 'התקדם' ובסוף 'שמור'";
+            MainPageViewModel.RescueMe(LayoutRoot, TitlePanel, ContentPanel, msg);
+        }
     }
 }

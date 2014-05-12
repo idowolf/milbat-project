@@ -16,6 +16,7 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="ApplicationBarIconButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/S.png" Text="עזרה" Click="SuperG"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
@@ -46,13 +47,13 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        
-        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+        <Grid x:Name="TitlePanel">
+            <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFFC5207" Text="{Binding LineOne}"/>
             <TextBlock Text="מדד בטיחות:" TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" Foreground="Black" />
             <Image Source="{Binding LineTwo}" Stretch="Fill" Grid.ColumnSpan="5" Grid.Row="3" Grid.Column="1"/>
         </StackPanel>
-
+        </Grid>
         <!--ContentPanel contains LongListSelector and LongListSelector ItemTemplate. Place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <phone:LongListSelector x:Name="MainLongListSelector" Margin="0,0,-12,0" ItemsSource="{Binding HouseRooms}" SelectionChanged="MainLongListSelector_SelectionChanged">

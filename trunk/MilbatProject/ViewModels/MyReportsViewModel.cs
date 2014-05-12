@@ -25,7 +25,27 @@ namespace MilbatProject.ViewModels
             get { return questionTitles; }
             set { questionTitles = value; }
         }
-        
+
+        private string _sampleProperty = "Sample Runtime Property Value";
+        /// <summary>
+        /// Sample ViewModel property; this property is used in the view to display its value using a Binding
+        /// </summary>
+        /// <returns></returns>
+        public string SampleProperty
+        {
+            get
+            {
+                return _sampleProperty;
+            }
+            set
+            {
+                if (value != _sampleProperty)
+                {
+                    _sampleProperty = value;
+                    NotifyPropertyChanged("SampleProperty");
+                }
+            }
+        }
         private XDocument doc = XDocument.Load("MilbatDatabase.xml");
         public MyReportsViewModel()
         {
@@ -146,27 +166,6 @@ namespace MilbatProject.ViewModels
         /// A collection for ItemViewModel objects.
         /// </summary>
         public ObservableCollection<SuggestionsViewModel> SuggestionsCollection { get; private set; }
-
-        private string _sampleProperty = "Hello World";
-        /// <summary>
-        /// Sample ViewModel property; this property is used in the view to display its value using a Binding
-        /// </summary>
-        /// <returns></returns>
-        public string SampleProperty
-        {
-            get
-            {
-                return _sampleProperty;
-            }
-            set
-            {
-                if (value != _sampleProperty)
-                {
-                    _sampleProperty = value;
-                    NotifyPropertyChanged("SampleProperty");
-                }
-            }
-        }
 
         /// <summary>
         /// Sample property that returns a localized string

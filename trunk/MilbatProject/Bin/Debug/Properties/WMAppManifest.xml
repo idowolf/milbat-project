@@ -8,33 +8,40 @@
     <Language code="ar" />
   </Languages>
   <App xmlns="" ProductID="{c68ded6b-12a5-474a-8114-d0936e7d4b54}" Title="משמרת הזהב" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="MIlbat Team I4G" Description="היישומון למען בטחונם האישי של בני הגיל השלישי" Publisher="עמותת מילבת" PublisherID="{087a87b0-3a1e-4afd-81a9-d68d7173c3a7}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
       <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
       <Capability Name="ID_CAP_SENSORS" />
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_MAP" />
+      <Capability Name="ID_CAP_ISV_CAMERA" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
     </Capabilities>
     <Tasks>
-      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+      <DefaultTask Name="_default" NavigationPage="SplashPage.xaml" />
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="MilbatProjectToken" TaskName="_default">
-        <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
-          <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+        <TemplateCycle>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</SmallImageURI>
           <Title>משמרת הזהב</Title>
-          <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
-          <BackTitle></BackTitle>
-          <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileLarge.png</LargeBackgroundImageURI>
-          <LargeBackContent />
-          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false"></LargeBackBackgroundImageURI>
-          <DeviceLockImageURI></DeviceLockImageURI>
+          <Photo01ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</Photo01ImageURI>
+          <Photo02ImageURI IsRelative="true" IsResource="false"></Photo02ImageURI>
+          <Photo03ImageURI IsRelative="true" IsResource="false"></Photo03ImageURI>
+          <Photo04ImageURI IsRelative="true" IsResource="false"></Photo04ImageURI>
+          <Photo05ImageURI IsRelative="true" IsResource="false"></Photo05ImageURI>
+          <Photo06ImageURI IsRelative="true" IsResource="false"></Photo06ImageURI>
+          <Photo07ImageURI IsRelative="true" IsResource="false"></Photo07ImageURI>
+          <Photo08ImageURI IsRelative="true" IsResource="false"></Photo08ImageURI>
+          <Photo09ImageURI IsRelative="true" IsResource="false"></Photo09ImageURI>
+          <Count>0</Count>
           <HasLarge>True</HasLarge>
-        </TemplateFlip>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+        </TemplateCycle>
       </PrimaryToken>
     </Tokens>
     <ScreenResolutions>

@@ -18,6 +18,7 @@
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.email.png" Text="שליחת מייל" Click="Mail_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.phone.png" Text="התקשר" Click="Call_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="Return_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/S.png" Text="עזרה" Click="SuperG"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
@@ -29,9 +30,11 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
+        <Grid x:Name="TitlePanel">
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="צור קשר" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFFC5207" FontWeight="Bold"/>
         </StackPanel>
+        </Grid>
         <Grid x:Name="ContentPanel" Grid.Row="0" Margin="16,130,8,4" Grid.RowSpan="2">
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" Height="464" Width="440" FontWeight="Bold">
         		<Run FontSize="24" Text="פרטי יצירת קשר עם העמותה:" TextDecorations="Underline"/>
@@ -57,6 +60,7 @@
             </TextBlock>
             <HyperlinkButton Content="https://www.facebook.com/milbat1981" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,122,0,0" Foreground="Black" FontSize="20"/>
             <HyperlinkButton Content="www.milbat.org.il&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="128,236,0,0" Foreground="Black"/>
+            <Image Margin="-38,304,-1,18" Source="Assets/לוגו מילבת.png" Stretch="Fill" Height="239.5" Width="495"/>
         </Grid>
 
         <!--ContentPanel - place additional content here-->
