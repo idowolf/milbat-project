@@ -10,6 +10,9 @@ using Microsoft.Phone.Shell;
 using MilbatProject.Resources;
 using MilbatProject.ViewModels;
 using MilbatProject;
+using Microsoft.Phone.Tasks;
+using System.Device.Location;
+using System.Windows.Media.Imaging;
 
 namespace MilbatProject
 {
@@ -24,7 +27,18 @@ namespace MilbatProject
 
         private void ashaf_Click(object sender, RoutedEventArgs e)
         {
+            //BingMapsTask bingMapsTask = new BingMapsTask();
+
+            ////Omit the Center property to use the user's current location.
+            //bingMapsTask.Center = new GeoCoordinate(47.6204, -122.3493);
+
+            //bingMapsTask.SearchTerm = "coffee";
+            //bingMapsTask.ZoomLevel = 2;
+
+            //bingMapsTask.Show();
             NavigationService.Navigate(new Uri("/WizardMainPage.xaml", UriKind.Relative));
+            //NavigationService.Navigate(new Uri("/SettingsPage.xaml", UriKind.Relative));
+            //MessageBox.Show(DateTime.Now.Day.ToString());
         }
 
         private void did_you_know_Click(object sender, RoutedEventArgs e)
@@ -44,7 +58,7 @@ namespace MilbatProject
 
         private void hanoyot_ve_avizarim_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/StoresPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/StoresMainPage.xaml", UriKind.Relative));
         }
 
         private void takanon_Click(object sender, RoutedEventArgs e)
@@ -56,43 +70,29 @@ namespace MilbatProject
         {
             NavigationService.Navigate(new Uri("/PictureResidentPage.xaml", UriKind.Relative));
         }
-        //    // Set the data context of the LongListSelector control to the sample data
 
-        //    DataContext = App.ViewModel;
-        //}
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
 
-        //// Load data for the ViewModel QuestionsCollection
-        //protected override void OnNavigatedTo(NavigationEventArgs e)
-        //{
-        //}
+            // Check if ExtendedSplashscreen.xaml is on the backstack  and remove 
+            if (NavigationService.BackStack.Count() == 1)
+            {
+                NavigationService.RemoveBackEntry();
+            }
 
-        //// Handle selection changed on LongListSelector
-        //private void MainLongListSelector_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    // If selected item is null (no selection) do nothing
-        //    if (MainLongListSelector.SelectedItem == null)
-        //        return;
-
-        //    // Navigate to the new page
-        //    NavigationService.Navigate(App.ViewModel.GetNavigationContext(MainLongListSelector.SelectedItem as MainPageListViewModel));
-        //    MainLongListSelector.SelectedItem = null;
-        //}
-
-        ////void GotoWizardPage_Click(object sender, EventArgs e)
-        ////{
-        ////    NavigationService.Navigate(new Uri("/WizardPage.xaml", UriKind.Relative));
-        ////}
-
-        ////void appBarButton_Click(object sender, EventArgs e)
-        ////{
-        ////    Application.Current.Terminate();
-        ////}
+        }
 
 
-        ////void ReturntoMainPage_Click(object sender, EventArgs e)
-        ////{
-        ////    NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
-        ////}
+        private void Settings(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/SettingsPage.xaml", UriKind.Relative));
+        }
 
+        private void SuperG(object sender, EventArgs e)
+        {
+            string msg = "שלום לכם, וברוכים הבאים לאפליקציית '. באפליקציה זו תוכלו לבצע בדיקת בטיחות לביתכם מפני גורמים המהווים סכנה עבור קשישים, לקבל טיפים לבטיחות הבית באמצעות אביזרים שונים, לאתר חנויות המספקות אביזרים בקרבת מקום, לצלם תמונות, וליצור עמנו קשר. אני אלווה אתכם לאורך כל האפליקציה. לשם הפעלתי, תוכלו ללחוץ על כפתור ה-S בתחתית הדף, ואופיע מיד להסביר לכם את אופן השימוש במסך הנוכחי, רק כדי לשמור על בטיחותכם. מאחל לכם שימוש מהנה ונכון באפליקציה, ובעיקר בטוח, סופר-סבא!";
+            MainPageViewModel.RescueMe(LayoutRoot, TitlePanel, ContentPanel, msg);
+        }
     }
 }

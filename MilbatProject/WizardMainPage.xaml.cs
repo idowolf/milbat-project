@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using MilbatProject.ViewModels;
 
 namespace MilbatProject
 {
@@ -30,6 +31,12 @@ namespace MilbatProject
         private void my_reports_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/MyReports.xaml", UriKind.Relative));
+        }
+
+        private void SuperG(object sender, EventArgs e)
+        {
+            string msg = "כאן ניתן לבחור את אזור הבדיקה – בתוך הבית או מחוצה לו, וגם לעיין בדוחות של הבתים והחדרים שכבר בדקת";
+            MainPageViewModel.RescueMe(LayoutRoot, TitlePanel, ContentPanel, msg);
         }
     }
 }

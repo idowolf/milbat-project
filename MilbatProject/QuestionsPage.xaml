@@ -19,6 +19,7 @@
             <shell:ApplicationBarIconButton x:Name="NextButton" Text="המשך" IconUri="/Assets/AppBar/back.png" Click="Nextbutton_Click" />
             <shell:ApplicationBarIconButton x:Name="BackButton" IconUri="/Assets/AppBar/next.png" Text="חזור"  Click="Previousbutton_Click" />
             <shell:ApplicationBarIconButton Text="שמור,המשך" IconUri="/Assets/AppBar/save.png" Click="Finish_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/S.png" Text="עזרה" Click="SuperG"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
@@ -47,17 +48,16 @@
         <!--TitlePanel contains the name of the application and page title-->
 
         <!--TitlePanel contains the name of the application and page title-->
+
         <StackPanel Grid.Row="0" Margin="0,17,0,28" Grid.ColumnSpan="6" Grid.Column="1">
             <TextBlock Text="{Binding QuestionTitle}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="40" Foreground="#FFFC5207"/>
         </StackPanel>
-
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Grid.ColumnSpan="7" Grid.RowSpan="3">
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="כעת לבדוק: " VerticalAlignment="Top" FontSize="24" Margin="23,44,0,0" TextDecorations="Underline" FontWeight="Bold" Foreground="Black"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="על מה להסתכל:" VerticalAlignment="Top" FontSize="24" TextDecorations="Underline" FontWeight="Bold" Margin="23,0,0,0" Foreground="Black"/>
             <TextBlock TextWrapping="Wrap" Text="{Binding LineOne}" VerticalAlignment="Top" FontSize="24" Margin="206,0,41,0" Foreground="Black"/>
             <TextBlock TextWrapping="Wrap" Text="{Binding LineTwo}" VerticalAlignment="Top" FontSize="24" Margin="23,80,19,0" Height="104" Foreground="Black"/>
-
         </Grid>
         <ToggleButton x:Name="yes" Margin="0,28" Grid.Row="2" Height="135" VerticalAlignment="Center" Grid.Column="1" BorderBrush="#FFFC5207" Background="White" Foreground="Black" Click="yes_Click">
             <Image Source="Assets/1398731078_camera_test.png" Stretch="Fill"/>
@@ -70,5 +70,6 @@
         <ToggleButton x:Name="takin_helkit" VerticalAlignment="Center" Margin="0,28" Grid.Row="2" Height="135" Grid.Column="3" BorderBrush="#FFFC5207" Background="White" Width="135" Foreground="Black" Click="takin_helkit_Click">
             <Image Source="Assets/takin helkit.png" Stretch="Fill"/>
         </ToggleButton>
+        <Grid x:Name="TitlePanel"></Grid>
     </Grid>
 </phone:PhoneApplicationPage>

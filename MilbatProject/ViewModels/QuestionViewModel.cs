@@ -134,18 +134,6 @@ namespace MilbatProject.ViewModels
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
         {

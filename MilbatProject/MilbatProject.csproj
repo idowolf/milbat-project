@@ -112,6 +112,16 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PhotoGallery.xaml.cs">
+      <DependentUpon>PhotoGallery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StoresMainPage.xaml.cs">
+      <DependentUpon>StoresMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\CategoryViewModel.cs" />
+    <Compile Include="ViewModels\StoresPageViewModel.cs" />
+    <Compile Include="ViewModels\StoreViewModel.cs" />
+    <Compile Include="ViewModels\TipViewModel.cs" />
     <Compile Include="MyReports.xaml.cs">
       <DependentUpon>MyReports.xaml</DependentUpon>
     </Compile>
@@ -136,8 +146,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\DailyTipViewModel.cs" />
+    <Compile Include="ViewModels\SettingsPageViewModel.cs" />
     <Compile Include="RoomPropertiesPage.xaml.cs">
       <DependentUpon>RoomPropertiesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SplashPage.xaml.cs">
       <DependentUpon>SplashPage.xaml</DependentUpon>
@@ -208,6 +223,10 @@
     <Page Include="MyReportsInsideRoom.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PhotoGallery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PictureResidentPage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -217,11 +236,23 @@
     <Page Include="RoomPropertiesPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <DesignData Include="SampleData\DailyTipViewModelSampleData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DesignData>
     <Page Include="SampleData\MyReportsViewModelSampleData.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SplashPage.xaml">
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="StoresMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="StoresPage.xaml">
       <SubType>Designer</SubType>
@@ -254,8 +285,10 @@
     <Content Include="Assets\AppBar\feature.camera.png" />
     <Content Include="Assets\AppBar\feature.email.png" />
     <Content Include="Assets\AppBar\feature.phone.png" />
+    <Content Include="Assets\AppBar\feature.settings.png" />
     <Content Include="Assets\AppBar\next.png" />
     <Content Include="Assets\AppBar\questionmark.png" />
+    <Content Include="Assets\AppBar\S.png" />
     <Content Include="Assets\AppBar\save.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -264,8 +297,27 @@
     <Content Include="Assets\Bathpic.jpg" />
     <Content Include="Assets\bathroompic.jpg" />
     <Content Include="Assets\Bedroompic.jpg" />
+    <Content Include="Assets\BrowsePictures.png" />
     <Content Include="Assets\camera.png" />
     <Content Include="Assets\checklist 2.png" />
+    <Content Include="Assets\checklist.png" />
+    <Content Include="Assets\DailyTips\001.jpg" />
+    <Content Include="Assets\DailyTips\002.jpg" />
+    <Content Include="Assets\DailyTips\003.jpg" />
+    <Content Include="Assets\DailyTips\004.jpg" />
+    <Content Include="Assets\DailyTips\005.jpg" />
+    <Content Include="Assets\DailyTips\006.jpg" />
+    <Content Include="Assets\DailyTips\007.jpg" />
+    <Content Include="Assets\DailyTips\008.jpg" />
+    <Content Include="Assets\DailyTips\009.jpg" />
+    <Content Include="Assets\DailyTips\010.jpg" />
+    <Content Include="Assets\DailyTips\011.jpg" />
+    <Content Include="Assets\DailyTips\012.jpg" />
+    <Content Include="Assets\DailyTips\013.jpg" />
+    <Content Include="Assets\DailyTips\014.jpg" />
+    <Content Include="Assets\DailyTips\015.jpg" />
+    <Content Include="Assets\DailyTips\016.jpg" />
+    <Content Include="Assets\DailyTips\017.jpg" />
     <Content Include="Assets\email.png" />
     <Content Include="Assets\EntranceDoorpic.jpg" />
     <Content Include="Assets\FlipCycleTileLarge.png" />
@@ -276,9 +328,11 @@
     <Content Include="Assets\I.png" />
     <Content Include="Assets\Image1.png" />
     <Content Include="Assets\in home.png" />
+    <Content Include="Assets\inside.png" />
     <Content Include="Assets\kitchennn.jpg" />
     <Content Include="Assets\lifty.jpg" />
     <Content Include="Assets\livingroompic.jpg" />
+    <Content Include="Assets\lo.png" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\Miscpic.png" />
     <Content Include="Assets\Miscpicc.jpg" />
@@ -299,7 +353,10 @@
     <Content Include="Assets\SquareTile150x150.png" />
     <Content Include="Assets\SquareTile71x71.png" />
     <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\superG.png" />
+    <Content Include="Assets\TakePicture.png" />
     <Content Include="Assets\takin helkit.png" />
+    <Content Include="Assets\takin.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -315,6 +372,8 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\ToggleButtonPanorama.png" />
+    <Content Include="Assets\ToggleButtonEnable.png" />
     <Content Include="Assets\Untitled-2-Recovered copy.png" />
     <Content Include="Assets\WideLogo.png" />
     <Content Include="Assets\WizardAssets\Questions\01.01.01.jpg" />
@@ -502,10 +561,35 @@
     <Content Include="Assets\WizardAssets\Suggestions\02.13.01.jpg" />
     <Content Include="Assets\WizardAssets\Suggestions\02.13.02.jpg" />
     <Content Include="Assets\Yardpic.jpg" />
+    <Content Include="Assets\דלת כניסה.jpg" />
+    <Content Include="Assets\חדר אמבטיה.jpg" />
+    <Content Include="Assets\חדר מדרגות חיצוני.jpg" />
+    <Content Include="Assets\חדר מקלחת.jpg" />
+    <Content Include="Assets\חדר שינה.png" />
+    <Content Include="Assets\חצר.jpg" />
+    <Content Include="Assets\כללי .png" />
+    <Content Include="Assets\לוגו מילבת.png" />
+    <Content Include="Assets\מד סוג אחר 1.png" />
+    <Content Include="Assets\מד סוג אחר 2.png" />
+    <Content Include="Assets\מד סוג אחר 3.png" />
+    <Content Include="Assets\מד סוג אחר 4.png" />
+    <Content Include="Assets\מד סוג אחר 5.png" />
+    <Content Include="Assets\מדרגות בתוך הבית.jpg" />
+    <Content Include="Assets\מטבח.jpg" />
+    <Content Include="Assets\מעלית.jpg" />
+    <Content Include="Assets\סלון.jpg" />
+    <Content Include="Assets\פרוזדורים.jpg" />
+    <Content Include="Assets\שירותים.jpg" />
+    <Content Include="DailyTipDatabase.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="logo.png" />
     <Content Include="MilbatDatabase.xml" />
     <Content Include="SplashScreenImage.png" />
-    <Content Include="test.xml" />
+    <Content Include="StoresDatabase.xml" />
+    <Content Include="test.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="WizardResults.xml" />
   </ItemGroup>
   <ItemGroup>

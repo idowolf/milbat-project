@@ -67,5 +67,11 @@ namespace MilbatProject
         {
             NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
+
+        private void SuperG(object sender, EventArgs e)
+        {
+            string msg = "אז אחרי שסיימנו למלא את האשף לבטיחות הבית, הגענו למקום בו נוכל לראות את התוצאות של האשף. במסך זה נראה את רשימת הבתים בהם מילאנו את האשף. בלחיצה על שם הבית נוכל לראות מה רמת הבטיחות הממוצעת עבור כל האזורים שנבדקו בבית.\nניתן לחזור בכל עת למסך זה או למסך האחרון בו ביקרתם על ידי לחיצה על הכפתור 'חזור' (החץ התחתון הפונה לצד שמאל).";
+            MainPageViewModel.RescueMe(LayoutRoot, TitlePanel, ContentPanel, msg);
+        }
     }
 }

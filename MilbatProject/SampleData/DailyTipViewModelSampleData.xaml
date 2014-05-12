@@ -1,0 +1,16 @@
+﻿<vm:DailyTipViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:MilbatProject.ViewModels"
+    SampleProperty="Sample Text Property Value">
+
+    <vm:DailyTipViewModel.TipsCollection>
+        <vm:TipViewModel Key="0" Question="design one" Detail="Maecenas praesent accumsan bibendum" Link="Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur" ImageUri="AAA"/>
+        <vm:TipViewModel Key="1" Question="design two" Detail="Dictumst eleifend facilisi faucibus" Link="Pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent" ImageUri="AAA"/>
+        <vm:TipViewModel Key="2" Question="design three" Detail="Habitant inceptos interdum lobortis" Link="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" ImageUri="AAA"/>
+        <vm:TipViewModel Key="3" Question="design four" Detail="Nascetur pharetra placerat pulvinar" Link="Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" ImageUri="AAA"/>
+        <vm:TipViewModel Key="4" Question="design five" Detail="Sagittis senectus sociosqu suscipit" Link="Dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis" ImageUri="AAA"/>
+        <vm:TipViewModel Key="5" Question="design six" Detail="Torquent ultrices vehicula volutpat" Link="Senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend" ImageUri="AAA"/>
+    </vm:DailyTipViewModel.TipsCollection>
+
+</vm:DailyTipViewModel>

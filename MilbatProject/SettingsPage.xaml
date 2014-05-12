@@ -1,0 +1,67 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="MilbatProject.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded_1">
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/save.png" Text="שמור " Click="SaveChanges"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="Return"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/S.png" Text="עזרה" Click="SuperG"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{StaticResource Brush1}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <Grid x:Name="TitlePanel">
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="הגדרות" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="{StaticResource Brush2}"/>
+        </StackPanel>
+        </Grid>
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBox x:Name="userName" HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.userNameEmpty, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Top" Width="456" FontSize="30.667" Background="{StaticResource Brush1}" BorderBrush="{StaticResource Brush2}" GotFocus="userName_GotFocus" LostFocus="userName_LostFocus"/>
+            <TextBox x:Name="emailAddress" HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.eMailEmpty, Source={StaticResource LocalizedStrings}}"  VerticalAlignment="Top" Width="456" Margin="0,81,0,0" FontSize="30.667" Background="{StaticResource Brush1}" BorderBrush="{StaticResource Brush2}" GotFocus="emailAddress_GotFocus" LostFocus="emailAddress_LostFocus"/>
+            <ToggleButton x:Name="TogglePanorama" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="147,210,152,0" BorderBrush="{StaticResource Brush2}" Foreground="Black" Click="TogglePanorama_Click" Height="65" Width="157">
+                <ToggleButton.Background>
+                    <ImageBrush ImageSource ="Assets/ToggleButtonEnable.png" ></ImageBrush>
+                </ToggleButton.Background>
+            </ToggleButton>
+            <TextBlock HorizontalAlignment="Left" Height="43" Margin="7,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" FontSize="30.667" Foreground="Black">
+        		<Span>
+        			<Run Text="התחלה בסריקה על ידי:"/>
+        		</Span>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Foreground="Black" Margin="1,222,0,0" TextAlignment="Center">
+        		<Run Text="כפתור "/>
+        		<LineBreak/>
+        		<Run Text="החל בסריקה"/>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="333,221,0,0" Foreground="Black" TextAlignment="Center">
+        		<Run Text="לחיצה "/>
+        		<LineBreak/>
+        		<Run Text="על התמונה"/>
+            </TextBlock>
+            <Button x:Name="IncreaseFont" Content="הגדל פונט" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="237,365,66,0" Background="{StaticResource Brush1}" BorderBrush="{StaticResource Brush2}" Foreground="Black" Click="IncreaseFont_Click"/>
+            <Button x:Name="DecreaseFont" Content="הקטן פונט" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="66,365,232,0" Background="{StaticResource Brush1}" BorderBrush="{StaticResource Brush2}" Foreground="Black" Width="158" Click="DecreaseFont_Click"/>            
+<Image x:Name="SuperGramps" Source="/Assets/superG.png" Visibility="Collapsed" />
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

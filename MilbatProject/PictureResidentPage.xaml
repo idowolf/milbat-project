@@ -15,15 +15,13 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar>
             <shell:ApplicationBarIconButton IconUri="/Assets/camera.png" Text="צילום דייר"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="Return_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="BackPage"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/save.png" Text="שמור" Click="SaveImage"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" FlowDirection="RightToLeft">
-        <Grid.Background>
-            <SolidColorBrush Color="#FFE1E1E1"/>
-        </Grid.Background>
+    <Grid x:Name="LayoutRoot" Background="{StaticResource Brush1}" FlowDirection="RightToLeft">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -31,13 +29,31 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="צילום דייר" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFFF5207"/>
-            <TextBlock Text="דף זה אינו קיים בגרסת הבטא. אנא נסה שוב מאוחר יותר." TextWrapping="Wrap" Foreground="Black" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,32,12,-32"/>
+            <TextBlock Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FFFF5207">
+            	<Span>
+            		<Run Text="צילום"/>
+            	</Span>
+            	<Run Text=" דייר"/>
+            </TextBlock>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <Grid x:Name="BeforePicture">
+                <Image Source="/Assets/TakePicture.png" HorizontalAlignment="Left" Height="286" VerticalAlignment="Top" Width="326" Margin="74,0,0,0" Tap="button_capture_Click"/>
+                <Image Source="/Assets/BrowsePictures.png" HorizontalAlignment="Left" Height="286" VerticalAlignment="Top" Width="326" Margin="74,266,0,0" Tap="Gallery_Click"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="הגלריה שלי" VerticalAlignment="Top" Margin="190,402,0,0" Style="{StaticResource PhoneTextNormalStyle}" Foreground="Black" />
+            </Grid>
+            <Grid x:Name="AfterPicture" Visibility="Collapsed">
+                <TextBlock x:Name="name_block" TextWrapping="Wrap" FlowDirection="RightToLeft" FontSize="33.333" Foreground="Black">
+        		<Run FontSize="46.667" Text="שם הדייר"/>
+        		<LineBreak/>
+        		<Run/>
+                </TextBlock>
+                <TextBox x:Name="name" TextWrapping="Wrap" Text="הקלד את שם הדייר כאן..." FlowDirection="RightToLeft" FontSize="26.667" BorderBrush="#BF000000" GotFocus="name_GotFocus" LostFocus="name_LostFocus" Margin="-10,71,10,408"/>
+                <Image x:Name="image_result" HorizontalAlignment="Left" Height="285" VerticalAlignment="Top" Width="367" Margin="44,218,0,0"/>
+            </Grid>
         </Grid>
     </Grid>
+    
 </phone:PhoneApplicationPage>

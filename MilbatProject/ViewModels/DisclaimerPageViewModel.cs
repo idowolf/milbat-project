@@ -18,7 +18,7 @@ namespace MilbatProject.ViewModels
         {
             using (IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication())
             {
-                using (IsolatedStorageFileStream isoStream = new IsolatedStorageFileStream("DisclaimerIsSigned.txt", FileMode.Create, isoStore))
+                using (IsolatedStorageFileStream isoStream = new IsolatedStorageFileStream("DisclaimerSigned.xml", FileMode.Create, isoStore))
                 {
                 }
             }
@@ -28,14 +28,14 @@ namespace MilbatProject.ViewModels
         {
             using (IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication())
             {
-                return isoStore.FileExists("DisclaimerIsSigned.txt");
+                return isoStore.FileExists("DisclaimerSigned.xml");
             }
         }
         public static void ForceDisclaimerRemoval()
         {
             using (IsolatedStorageFile isoStore = IsolatedStorageFile.GetUserStoreForApplication())
             {
-                isoStore.DeleteFile("DisclaimerIsSigned.txt");
+                isoStore.DeleteFile("DisclaimerSigned.xml");
             }
         }
     }

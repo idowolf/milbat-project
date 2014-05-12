@@ -8,6 +8,8 @@
     <!--Application Resources-->
     <Application.Resources>
         <local:LocalizedStrings xmlns:local="clr-namespace:MilbatProject" x:Key="LocalizedStrings"/>
+            <SolidColorBrush x:Key="Brush1" Color="#FFE1E1E1"/>
+            <SolidColorBrush x:Key="Brush2" Color="#FFFC5207"/>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>

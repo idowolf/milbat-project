@@ -1,47 +1,71 @@
-﻿<xapCache source="c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\MilbatProject_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="05/05/2014 00:39:34">
-  <file source="c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\obj\Release\MilbatProject.dll" archivePath="MilbatProject.dll" lastWriteTime="05/05/2014 00:39:32" />
+﻿<xapCache source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\MilbatProject_Release_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="12/05/2014 20:45:01">
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Release\MilbatProject.dll" archivePath="MilbatProject.dll" lastWriteTime="12/05/2014 20:44:59" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\1.jpg" archivePath="1.jpg" lastWriteTime="05/05/2014 00:04:04" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\1398731078_camera_test.png" archivePath="1398731078_camera_test.png" lastWriteTime="05/05/2014 00:04:04" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\1398731016_DeleteRed.png" archivePath="Assets\1398731016_DeleteRed.png" lastWriteTime="05/05/2014 00:02:04" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\1398731078_camera_test.png" archivePath="Assets\1398731078_camera_test.png" lastWriteTime="05/05/2014 00:02:04" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\auction_hammer_gavel.png" archivePath="Assets\AppBar\auction_hammer_gavel.png" lastWriteTime="05/05/2014 00:01:51" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\back.png" archivePath="Assets\AppBar\back.png" lastWriteTime="05/05/2014 00:01:51" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.camera.png" archivePath="Assets\AppBar\feature.camera.png" lastWriteTime="05/05/2014 00:01:51" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.email.png" archivePath="Assets\AppBar\feature.email.png" lastWriteTime="05/05/2014 00:01:51" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.phone.png" archivePath="Assets\AppBar\feature.phone.png" lastWriteTime="05/05/2014 00:01:51" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\next.png" archivePath="Assets\AppBar\next.png" lastWriteTime="05/05/2014 00:01:51" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\questionmark.png" archivePath="Assets\AppBar\questionmark.png" lastWriteTime="05/05/2014 00:01:51" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\save.png" archivePath="Assets\AppBar\save.png" lastWriteTime="05/05/2014 00:01:51" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\auction_hammer_gavel.png" archivePath="Assets\AppBar\auction_hammer_gavel.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\back.png" archivePath="Assets\AppBar\back.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.camera.png" archivePath="Assets\AppBar\feature.camera.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.email.png" archivePath="Assets\AppBar\feature.email.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.phone.png" archivePath="Assets\AppBar\feature.phone.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\feature.settings.png" archivePath="Assets\AppBar\feature.settings.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\next.png" archivePath="Assets\AppBar\next.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\questionmark.png" archivePath="Assets\AppBar\questionmark.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\S.png" archivePath="Assets\AppBar\S.png" lastWriteTime="11/05/2014 07:42:59" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\AppBar\save.png" archivePath="Assets\AppBar\save.png" lastWriteTime="09/05/2014 22:13:22" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="09/05/2014 22:11:31" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Bathpic.jpg" archivePath="Assets\Bathpic.jpg" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\bathroompic.jpg" archivePath="Assets\bathroompic.jpg" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Bedroompic.jpg" archivePath="Assets\Bedroompic.jpg" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\camera.png" archivePath="Assets\camera.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\checklist 2.png" archivePath="Assets\checklist 2.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\email.png" archivePath="Assets\email.png" lastWriteTime="05/05/2014 00:02:06" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\BrowsePictures.png" archivePath="Assets\BrowsePictures.png" lastWriteTime="11/05/2014 01:30:42" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\camera.png" archivePath="Assets\camera.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\checklist 2.png" archivePath="Assets\checklist 2.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\checklist.png" archivePath="Assets\checklist.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\001.jpg" archivePath="Assets\DailyTips\001.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\002.jpg" archivePath="Assets\DailyTips\002.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\003.jpg" archivePath="Assets\DailyTips\003.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\004.jpg" archivePath="Assets\DailyTips\004.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\005.jpg" archivePath="Assets\DailyTips\005.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\006.jpg" archivePath="Assets\DailyTips\006.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\007.jpg" archivePath="Assets\DailyTips\007.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\008.jpg" archivePath="Assets\DailyTips\008.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\009.jpg" archivePath="Assets\DailyTips\009.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\010.jpg" archivePath="Assets\DailyTips\010.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\011.jpg" archivePath="Assets\DailyTips\011.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\012.jpg" archivePath="Assets\DailyTips\012.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\013.jpg" archivePath="Assets\DailyTips\013.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\014.jpg" archivePath="Assets\DailyTips\014.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\015.jpg" archivePath="Assets\DailyTips\015.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\016.jpg" archivePath="Assets\DailyTips\016.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\DailyTips\017.jpg" archivePath="Assets\DailyTips\017.jpg" lastWriteTime="10/05/2014 12:26:17" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\email.png" archivePath="Assets\email.png" lastWriteTime="09/05/2014 22:11:31" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\EntranceDoorpic.jpg" archivePath="Assets\EntranceDoorpic.jpg" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\FlipCycleTileLarge.png" archivePath="Assets\FlipCycleTileLarge.png" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\FlipCycleTileMedium.png" archivePath="Assets\FlipCycleTileMedium.png" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\FlipCycleTileSmall.png" archivePath="Assets\FlipCycleTileSmall.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\home.png" archivePath="Assets\home.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\home1.png" archivePath="Assets\home1.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\I.png" archivePath="Assets\I.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Image1.png" archivePath="Assets\Image1.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\in home.png" archivePath="Assets\in home.png" lastWriteTime="05/05/2014 00:02:06" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\home.png" archivePath="Assets\home.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\home1.png" archivePath="Assets\home1.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\I.png" archivePath="Assets\I.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Image1.png" archivePath="Assets\Image1.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\in home.png" archivePath="Assets\in home.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\inside.png" archivePath="Assets\inside.png" lastWriteTime="09/05/2014 22:11:31" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\kitchennn.jpg" archivePath="Assets\kitchennn.jpg" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\lifty.jpg" archivePath="Assets\lifty.jpg" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\livingroompic.jpg" archivePath="Assets\livingroompic.jpg" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="05/05/2014 00:02:06" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\lo.png" archivePath="Assets\lo.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="09/05/2014 22:11:31" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Miscpic.png" archivePath="Assets\Miscpic.png" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Miscpicc.jpg" archivePath="Assets\Miscpicc.jpg" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Miscpiccc.jpg" archivePath="Assets\Miscpiccc.jpg" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\outsidestaircasepic.jpg" archivePath="Assets\outsidestaircasepic.jpg" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\OutsideStairspic.jpg" archivePath="Assets\OutsideStairspic.jpg" lastWriteTime="05/05/2014 00:02:07" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\patish.png" archivePath="Assets\patish.png" lastWriteTime="05/05/2014 00:02:07" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\patish.png" archivePath="Assets\patish.png" lastWriteTime="09/05/2014 22:11:31" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\prozdores.jpg" archivePath="Assets\prozdores.jpg" lastWriteTime="05/05/2014 00:02:07" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\question.png" archivePath="Assets\question.png" lastWriteTime="05/05/2014 00:02:07" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\reports.png" archivePath="Assets\reports.png" lastWriteTime="05/05/2014 00:02:07" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\question.png" archivePath="Assets\question.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\reports.png" archivePath="Assets\reports.png" lastWriteTime="09/05/2014 22:11:31" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\SafetyMeasure0.png" archivePath="Assets\SafetyMeasure0.png" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\SafetyMeasure100.png" archivePath="Assets\SafetyMeasure100.png" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\SafetyMeasure25.png" archivePath="Assets\SafetyMeasure25.png" lastWriteTime="05/05/2014 00:02:07" />
@@ -52,11 +76,16 @@
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="05/05/2014 00:02:07" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\takin helkit.png" archivePath="Assets\takin helkit.png" lastWriteTime="05/05/2014 00:02:07" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\superG.png" archivePath="Assets\superG.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\TakePicture.png" archivePath="Assets\TakePicture.png" lastWriteTime="11/05/2014 01:30:25" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\takin helkit.png" archivePath="Assets\takin helkit.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\takin.png" archivePath="Assets\takin.png" lastWriteTime="09/05/2014 22:11:31" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="05/05/2014 00:02:06" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="05/05/2014 00:02:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="05/05/2014 00:23:04" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="05/05/2014 00:23:41" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\ToggleButtonPanorama.png" archivePath="Assets\ToggleButtonPanorama.png" lastWriteTime="11/05/2014 01:27:23" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\ToggleButtonEnable.png" archivePath="Assets\ToggleButtonEnable.png" lastWriteTime="11/05/2014 01:26:41" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Untitled-2-Recovered copy.png" archivePath="Assets\Untitled-2-Recovered copy.png" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="05/05/2014 00:02:07" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\Questions\01.01.01.jpg" archivePath="Assets\WizardAssets\Questions\01.01.01.jpg" lastWriteTime="05/05/2014 00:02:03" />
@@ -244,19 +273,33 @@
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\Suggestions\02.13.01.jpg" archivePath="Assets\WizardAssets\Suggestions\02.13.01.jpg" lastWriteTime="05/05/2014 00:02:04" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\WizardAssets\Suggestions\02.13.02.jpg" archivePath="Assets\WizardAssets\Suggestions\02.13.02.jpg" lastWriteTime="05/05/2014 00:02:04" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\Yardpic.jpg" archivePath="Assets\Yardpic.jpg" lastWriteTime="05/05/2014 00:02:07" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\logo.png" archivePath="logo.png" lastWriteTime="05/05/2014 00:04:06" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\דלת כניסה.jpg" archivePath="Assets\דלת כניסה.jpg" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\חדר אמבטיה.jpg" archivePath="Assets\חדר אמבטיה.jpg" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\חדר מדרגות חיצוני.jpg" archivePath="Assets\חדר מדרגות חיצוני.jpg" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\חדר מקלחת.jpg" archivePath="Assets\חדר מקלחת.jpg" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\חדר שינה.png" archivePath="Assets\חדר שינה.png" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\חצר.jpg" archivePath="Assets\חצר.jpg" lastWriteTime="09/05/2014 22:11:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\כללי .png" archivePath="Assets\כללי .png" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\לוגו מילבת.png" archivePath="Assets\לוגו מילבת.png" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\מד סוג אחר 1.png" archivePath="Assets\מד סוג אחר 1.png" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\מד סוג אחר 2.png" archivePath="Assets\מד סוג אחר 2.png" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\מד סוג אחר 3.png" archivePath="Assets\מד סוג אחר 3.png" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\מד סוג אחר 4.png" archivePath="Assets\מד סוג אחר 4.png" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\מד סוג אחר 5.png" archivePath="Assets\מד סוג אחר 5.png" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\מדרגות בתוך הבית.jpg" archivePath="Assets\מדרגות בתוך הבית.jpg" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\מטבח.jpg" archivePath="Assets\מטבח.jpg" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\מעלית.jpg" archivePath="Assets\מעלית.jpg" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\סלון.jpg" archivePath="Assets\סלון.jpg" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\פרוזדורים.jpg" archivePath="Assets\פרוזדורים.jpg" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Assets\שירותים.jpg" archivePath="Assets\שירותים.jpg" lastWriteTime="09/05/2014 22:11:32" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\DailyTipDatabase.xml" archivePath="DailyTipDatabase.xml" lastWriteTime="10/05/2014 14:19:31" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\logo.png" archivePath="logo.png" lastWriteTime="10/05/2014 22:42:47" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\MilbatDatabase.xml" archivePath="MilbatDatabase.xml" lastWriteTime="05/05/2014 00:04:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\SplashScreenImage.png" archivePath="SplashScreenImage.png" lastWriteTime="05/05/2014 00:04:06" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\StoresDatabase.xml" archivePath="StoresDatabase.xml" lastWriteTime="10/05/2014 21:23:36" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\test.xml" archivePath="test.xml" lastWriteTime="05/05/2014 00:04:06" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\WizardResults.xml" archivePath="WizardResults.xml" lastWriteTime="05/05/2014 00:04:06" />
-  <file source="c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="05/05/2014 00:38:44" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="05/05/2014 00:02:06" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="12/05/2014 19:15:13" />
   <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="05/05/2014 00:23:04" />
-  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="05/05/2014 00:23:41" />
-  <file source="c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="05/05/2014 00:02:06" />
-  <file source="c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="05/05/2014 00:38:44" />
+  <file source="C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\Bin\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="12/05/2014 19:15:13" />
 </xapCache>

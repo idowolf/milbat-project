@@ -27,7 +27,7 @@ namespace MilbatProject
         private void Mail_Click(object sender, EventArgs e)
         {
             EmailComposeTask emailComposeTask = new EmailComposeTask();
-            emailComposeTask.To = "milbat@netvision.net.il";
+            emailComposeTask.To = "milbat@netvision.net.il, " + SettingsPageViewModel.eMail;
             emailComposeTask.Subject = "הודעה שנשלחה מתוך 'משמרת הזהב'";
             emailComposeTask.Body = "";
             emailComposeTask.Body += "משתמש יקר, \nאנא צרף הודעתך מטה:\n\n\n";
@@ -48,6 +48,13 @@ namespace MilbatProject
             phoneCallTask.PhoneNumber = "0722230007";
             phoneCallTask.DisplayName = "עמותת מילבת";
             phoneCallTask.Show();
+        }
+
+
+        private void SuperG(object sender, EventArgs e)
+        {
+            string msg = "הגעתם לעמוד 'צור קשר', פה תוכלו למצוא פרטים ליצירת קשר עמנו באמצעות מספר דרכים: המייל, הטלפון, הפייסבוק והאתר. ";
+            MainPageViewModel.RescueMe(LayoutRoot, TitlePanel, ContentPanel, msg);
         }
     }
 }

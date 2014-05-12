@@ -11,10 +11,11 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded_1">
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar Mode="Default">
             <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="חזור" Click="Back_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/S.png" Text="עזרה" Click="SuperG"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
     
@@ -26,7 +27,7 @@
         <phone:Panorama Title="מחוץ לבית" Foreground="#FFFC5207">
 
             <!--Panorama item one-->
-            <phone:PanoramaItem x:Name="madregot" Header="חדר מדרגות" FlowDirection="RightToLeft" Foreground="Black">
+            <phone:PanoramaItem x:Name="outsideStaircase" Header="חדר מדרגות" FlowDirection="RightToLeft" Foreground="Black" Tap="Panorama_Click">
                 <Grid>
                     <Image Source="Assets/OutsideStairspic.jpg" Stretch="Fill"/>
                     <Button x:Name="OutsideStaircase" Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Foreground="White" BorderBrush="White" Click="Button_Click">
@@ -35,14 +36,14 @@
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
-            <phone:PanoramaItem x:Name="yard" Header="חצר" FlowDirection="RightToLeft" Foreground="Black">
+            <phone:PanoramaItem x:Name="yard" Header="חצר" FlowDirection="RightToLeft" Foreground="Black" Tap="Panorama_Click">
                 <Grid>
                     <Image Source="Assets/Yardpic.jpg" Stretch="Fill"/>
                     <Button x:Name="Yard" Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Button_Click">
                     </Button>
                 </Grid>
             </phone:PanoramaItem>
-            <phone:PanoramaItem x:Name="elevator" Header="מעלית" FlowDirection="RightToLeft" Foreground="Black">
+            <phone:PanoramaItem x:Name="lift" Header="מעלית" FlowDirection="RightToLeft" Foreground="Black" Tap="Panorama_Click">
                 <Grid>
                     <Image Source="Assets/lifty.jpg" Stretch="Fill"/>
                     <Button x:Name="Lift" Content="החל בסריקה" Margin="0,300,182,0" FontWeight="Bold" FontSize="26.667" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Button_Click">
@@ -50,6 +51,8 @@
                 </Grid>
             </phone:PanoramaItem>
         </phone:Panorama>
+        <Grid x:Name="ContentPanel" Visibility="Collapsed"></Grid>
+        <Grid x:Name="TitlePanel" Visibility="Collapsed"></Grid>
     </Grid>
 
 </phone:PhoneApplicationPage>

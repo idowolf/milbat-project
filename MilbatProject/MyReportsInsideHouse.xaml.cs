@@ -52,5 +52,10 @@ namespace MilbatProject
             NavigationService.Navigate(new Uri("/MyReports.xaml", UriKind.Relative));
 
         }
+        private void SuperG(object sender, EventArgs e)
+        {
+            string msg = "כאן נראה את כל האזורים בבית בהם ערכנו את אשף הבטיחות, ואת מד הבטיחות המציג לנו את הרמה הממוצעת של בטיחות הבית בעבור קשישים. בלחיצה על שם האזור תוכלו לראות את הדברים שנחשבים למסוכנים באותו אזור, כך שתוכלו לתקנם.\nניתן לחזור בכל עת למסך זה או למסך האחרון בו ביקרתם על ידי לחיצה על הכפתור 'חזור' (החץ התחתון הפונה לצד שמאל). ";
+            MainPageViewModel.RescueMe(LayoutRoot, TitlePanel, ContentPanel, msg);
+        }
     }
 }
