@@ -105,6 +105,9 @@
     <Compile Include="DisclaimerPage.xaml.cs">
       <DependentUpon>DisclaimerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ImageButton.xaml.cs">
+      <DependentUpon>ImageButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="DetailsPage.xaml.cs">
       <DependentUpon>DetailsPage.xaml</DependentUpon>
@@ -202,6 +205,10 @@
     </Page>
     <Page Include="DisclaimerPage.xaml">
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ImageButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
@@ -561,32 +568,16 @@
     <Content Include="Assets\WizardAssets\Suggestions\02.13.01.jpg" />
     <Content Include="Assets\WizardAssets\Suggestions\02.13.02.jpg" />
     <Content Include="Assets\Yardpic.jpg" />
-    <Content Include="Assets\דלת כניסה.jpg" />
-    <Content Include="Assets\חדר אמבטיה.jpg" />
-    <Content Include="Assets\חדר מדרגות חיצוני.jpg" />
-    <Content Include="Assets\חדר מקלחת.jpg" />
-    <Content Include="Assets\חדר שינה.png" />
-    <Content Include="Assets\חצר.jpg" />
-    <Content Include="Assets\כללי .png" />
-    <Content Include="Assets\לוגו מילבת.png" />
-    <Content Include="Assets\מד סוג אחר 1.png" />
-    <Content Include="Assets\מד סוג אחר 2.png" />
-    <Content Include="Assets\מד סוג אחר 3.png" />
-    <Content Include="Assets\מד סוג אחר 4.png" />
-    <Content Include="Assets\מד סוג אחר 5.png" />
-    <Content Include="Assets\מדרגות בתוך הבית.jpg" />
-    <Content Include="Assets\מטבח.jpg" />
-    <Content Include="Assets\מעלית.jpg" />
-    <Content Include="Assets\סלון.jpg" />
-    <Content Include="Assets\פרוזדורים.jpg" />
-    <Content Include="Assets\שירותים.jpg" />
+    <Content Include="Assets\entrancedoor.jpg" />
     <Content Include="DailyTipDatabase.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="logo.png" />
     <Content Include="MilbatDatabase.xml" />
     <Content Include="SplashScreenImage.png" />
-    <Content Include="StoresDatabase.xml" />
+    <Content Include="StoresDatabase.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="test.xml">
       <SubType>Designer</SubType>
     </Content>

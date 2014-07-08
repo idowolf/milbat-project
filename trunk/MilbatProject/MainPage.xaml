@@ -29,7 +29,7 @@
     <Grid x:Name="LayoutRoot" FlowDirection="RightToLeft" Background="#FFE1E1E1">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <!-- LOCALIZATION NOTE:
@@ -64,17 +64,25 @@
                     <ColumnDefinition Width="115*"/>
                     <ColumnDefinition Width="113*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="tzilom_dayar" Content="צילום דייר&#xA;&#xA;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="0,514,5,81" Width="225" Height="157" Click="tzilom_dayar_Click"/>
+                <Button x:Name="tzilom_dayar" Foreground="White" Background="#FF4A78A8" FontSize="30.667" Margin="0,514,5,81" Width="225" Height="157" Click="tzilom_dayar_Click">
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Center">צילום דייר</TextBlock>
+                        <Image Source="Assets/camera.png" Margin="0,-30,0,0" Height="121" Width="231"/>
+                    </StackPanel>
+                </Button>
                 <Button x:Name="odot" Content="אודות&#xA;&#xA;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="-2,175,7,420" Width="225" Height="157" Click="odot_Click"/>
                 <Button x:Name="did_you_know" Content="הידעת&#xA;&#xA;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="229,175,2,420" Width="225" Height="157" Grid.ColumnSpan="2" Click="did_you_know_Click"/>
                 <Button x:Name="contact_us" Content="צור קשר&#xA;&#xA;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="229,344,2,251" Width="225" Grid.ColumnSpan="2" Click="contact_us_Click"/>
                 <Button x:Name="hanoyot_ve_avizarim" Content="חנויות &#xA;&#xA;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="-2,344,7,251" Width="225" Height="157" Click="hanoyot_ve_avizarim_Click"/>
                 <Button x:Name="ashaf" Content="אשף הבטיחות            &#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="-2,2,2,603" Grid.ColumnSpan="2" Height="157" Click="ashaf_Click"/>
-                <Button x:Name="takanon" Content="תקנון&#xA;&#xA;&#xA;" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="229,514,2,81" Width="225" Height="157" Grid.ColumnSpan="2" Click="takanon_Click"/>
+                <Button x:Name="takanon" Background="#FF4A78A8" Foreground="White" FontSize="30.667" Margin="229,514,2,81" Width="225" Height="157" Grid.ColumnSpan="2" Click="takanon_Click">
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Center">תקנון</TextBlock>
+                        <Image Source="Assets/patish.png" Margin="0,0,0,0" Height="70"/>
+                    </StackPanel>
+                </Button>
                 <Image Margin="52,0,50,250" Source="Assets/email.png" Stretch="Fill" Height="124" Width="124" VerticalAlignment="Bottom" Grid.Column="1"/>
-                <Image Margin="48,542,0,86" Source="Assets/camera.png" Stretch="Fill" Width="124" Height="124" HorizontalAlignment="Left"/>
                 <Image Margin="52,207,50,421" Source="Assets/question.png" Stretch="Fill" Width="124" Height="124" Grid.Column="1"/>
-                <Image Margin="74,576,72,96" Source="Assets/patish.png" Stretch="Fill" Width="80" Height="80" Grid.Column="1"/>
                 <Image Margin="48,0,0,248" Source="Assets/home1.png" Stretch="Fill" Width="124" Height="124" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
                 <Image Margin="58,39,63,608" Source="Assets/checklist 2.png" Stretch="Fill" Width="105" Grid.Column="1"/>
                 <Image Source="Assets/I.png" Stretch="Fill" Margin="48,209,0,419" Width="124" Height="124" HorizontalAlignment="Left"/>
