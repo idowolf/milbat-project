@@ -89,3 +89,4 @@ c:\users\ido\documents\visual studio 2012\Projects\MilbatProject\MilbatProject\o
 C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Release\PhotoGallery.g.cs
 C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Release\SettingsPage.g.cs
 C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Release\StoresMainPage.g.cs
+C:\Users\Ido\Documents\Visual Studio 2012\Projects\MilbatProject\MilbatProject\obj\Release\ImageButton.g.cs
